@@ -18,6 +18,7 @@ export const config = {
     pendingAccount: 'Your account is waiting for approval. Contact a ToothQBank admin to activate it.',
     rejectedOrRevoked: 'Your account does not have access. Contact a ToothQBank admin for help.',
     forgotPassword: 'Contact a ToothQBank admin to reset your password.',
+    noAccess: 'You cannot open these questions right now. Contact a ToothQBank admin if you think this is a mistake.',
     deviceLimit: 'This account is already active on another device or browser. Contact a ToothQBank admin to switch.',
   },
 } as const

@@ -208,6 +208,7 @@ a {
 
 .topbar-actions {
   margin-left: auto;
+  padding-left: 12px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -226,6 +227,27 @@ a {
 .topbar-link {
   font-weight: 600;
   text-decoration: none;
+}
+
+.topbar-actions .button,
+.topbar-link,
+.brand-name {
+  white-space: nowrap;
+}
+
+/* Very narrow phones: the name is already on the home page, so hide it in the top bar. */
+@media (max-width: 399px) {
+  .topbar-user {
+    display: none;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .brand-name {
+    font-size: 1.1rem;
+  }
 }
 
 /* Banners (account status, notices) */
@@ -1439,6 +1461,70 @@ a {
 
 .session-row-title {
   font-weight: 600;
+}
+
+/* Security check page */
+
+.security-check .button {
+  margin: 8px 0 16px;
+}
+
+.check-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.check-row {
+  display: flex;
+  gap: 12px;
+  padding: 12px 14px;
+}
+
+.check-row + .check-row {
+  border-top: 1px solid var(--border);
+}
+
+.check-mark {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+.check-pass .check-mark {
+  background: #3f9d68;
+  border-color: #3f9d68;
+  color: #fff;
+}
+
+.check-fail {
+  background: #fdf0ef;
+}
+
+.check-fail .check-mark {
+  background: #d9534a;
+  border-color: #d9534a;
+  color: #fff;
+}
+
+.check-name {
+  display: block;
+  font-weight: 600;
+}
+
+.check-detail {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-muted);
 }
 
 @media (min-width: 720px) {

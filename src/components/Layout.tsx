@@ -1,11 +1,29 @@
-import { Link, Outlet } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { Link, Outlet, useLocation } from 'react-router-dom'
 import logoMark from '../assets/logo-mark.png'
 import { useAuth } from '../auth/AuthContext.tsx'
 import { config } from '../config.ts'
+import ErrorBoundary from './ErrorBoundary.tsx'
 import StatusBanner from './StatusBanner.tsx'
+
+function useOnline(): boolean {
+  const [online, setOnline] = useState(() => navigator.onLine)
+  useEffect(() => {
+    const update = () => setOnline(navigator.onLine)
+    window.addEventListener('online', update)
+    window.addEventListener('offline', update)
+    return () => {
+      window.removeEventListener('online', update)
+      window.removeEventListener('offline', update)
+    }
+  }, [])
+  return online
+}
 
 export default function Layout() {
   const { loading, profile, signOut } = useAuth()
+  const { pathname } = useLocation()
+  const online = useOnline()
 
   return (
     <div className="app">
@@ -45,8 +63,16 @@ export default function Layout() {
       </header>
 
       <main className="container main">
+        {!online && (
+          <div className="banner banner-warning" role="status">
+            <p>You are offline. Answers cannot be saved until your internet connection is back.</p>
+          </div>
+        )}
         <StatusBanner />
-        <Outlet />
+        {/* A new page starts without the previous page's error. */}
+        <ErrorBoundary key={pathname}>
+          <Outlet />
+        </ErrorBoundary>
       </main>
 
       <footer className="footer">

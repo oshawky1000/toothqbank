@@ -11,6 +11,8 @@ MCQ question bank for dentistry students. See `CLAUDE.md` for the full project b
 - `supabase/migrations/`: database changes (tables, security rules, seed data), applied in order in the Supabase SQL Editor
 - `docs/brand/tooth-original.jpg`: original logo image the icons were made from
 - `docs/CHANGELOG.md`: what each build phase added
+- `docs/security-review.md`: plain-language security review, and how to re-check it with `/security-check`
+- `public/_headers`: security headers that Cloudflare Pages adds to every page
 
 ## Cloudflare Pages build settings
 - Framework preset: **React (Vite)**
