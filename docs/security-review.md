@@ -100,7 +100,7 @@ Supabase's **Security Advisor** page lists some warnings. These are expected:
 
 1. Keep one **test student account** that is **pending** (not approved, no courses unlocked).
 2. Log in with it on a phone and open `your-site-address/security-check`.
-3. Tap **Run security check**. Every line should show a green tick and the summary should say **"All 14 checks passed"**.
+3. Tap **Run security check**. Every line should show a green tick and the summary should say **"All 17 checks passed"** (3 of them test question images: seeing or opening images of locked courses, seeing images from another device, and uploading an image).
 4. If any line shows a red ✗ **PROBLEM**, take a screenshot and send it to your developer.
 
 Re-run it after any database change.

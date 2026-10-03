@@ -6,7 +6,7 @@ MCQ question bank for dentistry students. See `CLAUDE.md` for the full project b
 - `src/`: the website (React + Vite + TypeScript)
 - `src/config.ts`: price and contact messages (change them here)
 - `public/`: browser tab icon and phone home-screen icon
-- `data/`: question files (JSON), format in `docs/question-format.md`
+- `data/`: question files (JSON) and their images, format in `docs/question-format.md`. One file per batch, e.g. `data/op1-text.json`; a batch with images gets a folder, e.g. `data/op1-practical/` (the JSON plus an `images/` folder)
 - `functions/`: Cloudflare Pages Functions (server code). `functions/api/admin/reset-password.ts` lets admins reset a student's password
 - `supabase/migrations/`: database changes (tables, security rules, seed data, the private `question-images` storage bucket), applied in order in the Supabase SQL Editor
 - `docs/brand/tooth-original.jpg`: original logo image the icons were made from
