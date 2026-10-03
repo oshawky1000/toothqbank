@@ -11,6 +11,7 @@ import {
   type Mode,
   type Order,
   type PoolQuestion,
+  type QuestionType,
 } from '../lib/practice.ts'
 import { loadHistory, type History } from '../lib/progress.ts'
 import NotFound from './NotFound.tsx'
@@ -23,6 +24,14 @@ const TIME_OPTIONS = [
   { seconds: 90, label: '1.5 min' },
   { seconds: 120, label: '2 min' },
 ]
+const TYPES: { value: QuestionType; label: string; hint: string }[] = [
+  { value: 'all', label: 'Written and practical', hint: 'Both kinds together.' },
+  { value: 'written', label: 'Written only', hint: 'Questions without images.' },
+  { value: 'practical', label: 'Practical only', hint: 'Questions with images.' },
+]
+const matchesType = (q: PoolQuestion, type: QuestionType) =>
+  type === 'all' || (type === 'practical') === q.has_images
+
 const FILTERS: { value: Filter; label: string }[] = [
   { value: 'all', label: 'All questions' },
   { value: 'unanswered', label: 'Unanswered' },
@@ -80,15 +89,23 @@ function matchesFilter(q: PoolQuestion, filter: Filter, history: History): boole
 function Builder({ course, pool, history }: { course: Course; pool: PoolQuestion[]; history: History }) {
   const navigate = useNavigate()
   const [searchParams] = useSearchParams()
-  const chapters = course.chapters.filter((ch) => pool.some((q) => q.chapter_id === ch.id))
-  const sections = SECTIONS.filter((s) => pool.some((q) => q.category === s.category))
+  // Courses with both written and practical (image) questions get a "Question type" choice.
+  const hasBothTypes = pool.some((q) => q.has_images) && pool.some((q) => !q.has_images)
+  const [type, setType] = useState<QuestionType>(() =>
+    hasBothTypes && searchParams.get('type') === 'practical' ? 'practical' : 'all',
+  )
+  const typed = pool.filter((q) => matchesType(q, type))
+
+  const allChapterIds = course.chapters.filter((ch) => pool.some((q) => q.chapter_id === ch.id)).map((ch) => ch.id)
+  const chapters = course.chapters.filter((ch) => typed.some((q) => q.chapter_id === ch.id))
+  const sections = SECTIONS.filter((s) => typed.some((q) => q.category === s.category))
 
   // A link from a chapter page preselects that chapter.
   const preselected = Number(searchParams.get('chapter'))
   const [chosenChapters, setChosenChapters] = useState<number[]>(() =>
-    chapters.some((ch) => ch.id === preselected) ? [preselected] : chapters.map((ch) => ch.id),
+    allChapterIds.includes(preselected) ? [preselected] : allChapterIds,
   )
-  const [chosenSections, setChosenSections] = useState<Category[]>(() => sections.map((s) => s.category))
+  const [chosenSections, setChosenSections] = useState<Category[]>(() => SECTIONS.map((s) => s.category))
   const [filter, setFilter] = useState<Filter>('all')
   const [order, setOrder] = useState<Order>('random')
   const [count, setCount] = useState(20)
@@ -98,7 +115,7 @@ function Builder({ course, pool, history }: { course: Course; pool: PoolQuestion
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
-  const candidates = pool.filter(
+  const candidates = typed.filter(
     (q) =>
       chosenChapters.includes(q.chapter_id) &&
       chosenSections.includes(q.category) &&
@@ -106,11 +123,15 @@ function Builder({ course, pool, history }: { course: Course; pool: PoolQuestion
   )
   const available = candidates.length
   const finalCount = Math.min(count, available)
-  const allChapters = chosenChapters.length === chapters.length
+  const allChapters = chapters.every((ch) => chosenChapters.includes(ch.id))
+
+  // How many questions each type would give with the current chapters (before sections and filter).
+  const typeCount = (t: QuestionType) =>
+    pool.filter((q) => matchesType(q, t) && chosenChapters.includes(q.chapter_id)).length
 
   // How many questions each filter would give with the current chapters and sections.
   const filterCount = (f: Filter) =>
-    pool.filter(
+    typed.filter(
       (q) => chosenChapters.includes(q.chapter_id) && chosenSections.includes(q.category) && matchesFilter(q, f, history),
     ).length
 
@@ -128,7 +149,14 @@ function Builder({ course, pool, history }: { course: Course; pool: PoolQuestion
       course.id,
       mode,
       secondsPerQuestion,
-      { chapters: chosenChapters, sections: chosenSections, filter, order, count: picked.length },
+      {
+        chapters: chosenChapters.filter((id) => chapters.some((ch) => ch.id === id)),
+        sections: chosenSections.filter((c) => sections.some((s) => s.category === c)),
+        filter,
+        order,
+        count: picked.length,
+        type,
+      },
       picked.map((q) => q.id),
     )
     if ('error' in result) {
@@ -149,13 +177,31 @@ function Builder({ course, pool, history }: { course: Course; pool: PoolQuestion
       <h1>New practice session</h1>
 
       <form className="stack" onSubmit={handleSubmit}>
+        {hasBothTypes && (
+          <fieldset className="card builder-group">
+            <legend>Question type</legend>
+            <div className="checkbox-list">
+              {TYPES.map((t) => (
+                <label key={t.value} className="checkbox-row">
+                  <input type="radio" name="type" checked={type === t.value} onChange={() => setType(t.value)} />
+                  <span>
+                    <strong>{t.label}</strong>
+                    <span className="block muted small">{t.hint}</span>
+                  </span>
+                  <span className="muted small">{typeCount(t.value)}</span>
+                </label>
+              ))}
+            </div>
+          </fieldset>
+        )}
+
         <fieldset className="card builder-group">
           <legend>Chapters</legend>
           <label className="checkbox-row select-all">
             <input
               type="checkbox"
               checked={allChapters}
-              onChange={(e) => setChosenChapters(e.target.checked ? chapters.map((ch) => ch.id) : [])}
+              onChange={(e) => setChosenChapters(e.target.checked ? allChapterIds : [])}
             />
             <span>Select all</span>
           </label>
@@ -168,7 +214,7 @@ function Builder({ course, pool, history }: { course: Course; pool: PoolQuestion
                   onChange={(e) => setChosenChapters((list) => toggle(list, ch.id, e.target.checked))}
                 />
                 <span>{ch.name}</span>
-                <span className="muted small">{pool.filter((q) => q.chapter_id === ch.id).length}</span>
+                <span className="muted small">{typed.filter((q) => q.chapter_id === ch.id).length}</span>
               </label>
             ))}
           </div>
@@ -185,7 +231,7 @@ function Builder({ course, pool, history }: { course: Course; pool: PoolQuestion
                   onChange={(e) => setChosenSections((list) => toggle(list, s.category, e.target.checked))}
                 />
                 <span>{s.label}</span>
-                <span className="muted small">{pool.filter((q) => q.category === s.category).length}</span>
+                <span className="muted small">{typed.filter((q) => q.category === s.category).length}</span>
               </label>
             ))}
           </div>

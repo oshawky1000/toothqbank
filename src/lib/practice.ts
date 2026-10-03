@@ -8,6 +8,8 @@ import type { Category } from './catalog.ts'
 export type Order = 'random' | 'most_repeated'
 export type Mode = 'tutor' | 'timed'
 export type Filter = 'all' | 'unanswered' | 'incorrect'
+/** Practical questions are questions with images; written questions have none. */
+export type QuestionType = 'all' | 'written' | 'practical'
 
 export type SessionSettings = {
   chapters: number[]
@@ -15,12 +17,21 @@ export type SessionSettings = {
   filter: Filter
   order: Order
   count: number
+  /** Written, practical or both. Older sessions do not have it (= all). */
+  type?: QuestionType
   /** Timed sessions only: seconds used so far, so the timer can resume. */
   elapsed_seconds?: number
 }
 
 /** A question the session builder can pick (no question content). */
-export type PoolQuestion = { id: string; chapter_id: number; category: Category; times_seen: number }
+export type PoolQuestion = {
+  id: string
+  chapter_id: number
+  category: Category
+  times_seen: number
+  /** True for practical questions (questions with images). */
+  has_images: boolean
+}
 
 export type Option = { key: string; text: string }
 
@@ -74,12 +85,13 @@ export async function loadPool(courseId: string): Promise<PoolQuestion[]> {
   for (let from = 0; ; from += PAGE) {
     const { data, error } = await supabase
       .from('questions')
-      .select('id, chapter_id, category, times_seen')
+      .select('id, chapter_id, category, times_seen, images')
       .eq('course_id', courseId)
       .order('id')
       .range(from, from + PAGE - 1)
     if (error) throw error
-    pool.push(...((data ?? []) as PoolQuestion[]))
+    type Row = Omit<PoolQuestion, 'has_images'> & { images: string[] | null }
+    for (const { images, ...q } of (data ?? []) as Row[]) pool.push({ ...q, has_images: (images ?? []).length > 0 })
     if (!data || data.length < PAGE) return pool
   }
 }

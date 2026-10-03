@@ -39,6 +39,7 @@ One JSON file per course batch, e.g. `gm1-pilot.json`.
 - Import the JSON file and its image files **together** in Admin > Import (choose them all at once, or add missing ones with "Add more files"). Capital letters in the file name do not matter when matching (`Slide1.JPG` matches `slide1.jpg`).
 - Images already uploaded for that course do not have to be chosen again when you re-import a fixed JSON file. Choosing an image with the same name replaces the old one.
 - If an image named in the file is neither chosen nor already on the site, the import stops and lists the question id and file name. Nothing is saved.
+- A question with at least one image counts as a **practical question**. On the course page practical questions are shown apart from the written ones (Past papers / Quizzes & midterms / Chapter questions count written questions only), and the session builder offers "Question type": Written and practical, Written only, or Practical only. This appears automatically for any course that has both kinds.
 - Large photos are shrunk automatically (to 2000 pixels on the longest side) before upload. Each image must be 5 MB or smaller after that; GIFs are never shrunk.
 
 ## Notes for the build
