@@ -1,7 +1,8 @@
 import { useState, type FormEvent } from 'react'
-import { Link, Navigate } from 'react-router-dom'
+import { Link, Navigate, useLocation } from 'react-router-dom'
 import { useAuth } from '../auth/AuthContext.tsx'
 import ContactLink from '../components/ContactLink.tsx'
+import { nextPath } from '../components/RequireLogin.tsx'
 import { config } from '../config.ts'
 
 export default function Login() {
@@ -11,8 +12,9 @@ export default function Login() {
   const [error, setError] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
   const [showForgot, setShowForgot] = useState(false)
+  const { search } = useLocation()
 
-  if (profile) return <Navigate to="/" replace />
+  if (profile) return <Navigate to={nextPath(search)} replace />
 
   async function handleSubmit(event: FormEvent) {
     event.preventDefault()

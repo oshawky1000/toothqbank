@@ -7,6 +7,7 @@ import { percent } from '../lib/progress.ts'
 // On the course page: unfinished sessions to resume, and recent results.
 export default function RecentSessions({ courseId }: { courseId: string }) {
   const [sessions, setSessions] = useState<SessionSummary[] | null>(null)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     let cancelled = false
@@ -29,8 +30,11 @@ export default function RecentSessions({ courseId }: { courseId: string }) {
 
   async function discard(session: SessionSummary) {
     if (!window.confirm('Discard this unfinished session? Your answers in it will be deleted.')) return
+    setError(null)
     if (await deleteSession(session.id)) {
       setSessions((list) => list?.filter((s) => s.id !== session.id) ?? null)
+    } else {
+      setError('Could not discard the session. Check your internet connection and try again.')
     }
   }
 
@@ -42,6 +46,11 @@ export default function RecentSessions({ courseId }: { courseId: string }) {
       {unfinished.length > 0 && (
         <div className="card">
           <h2>Continue where you left off</h2>
+          {error && (
+            <p className="form-error" role="alert">
+              {error}
+            </p>
+          )}
           <ul className="session-list">
             {unfinished.map((s) => (
               <li key={s.id} className="session-row">

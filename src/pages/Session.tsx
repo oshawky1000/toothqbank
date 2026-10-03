@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import ContactLink from '../components/ContactLink.tsx'
 import LoadProblem from '../components/LoadProblem.tsx'
 import ReportForm from '../components/ReportForm.tsx'
 import {
@@ -12,6 +13,7 @@ import {
   type LoadedSession,
   type Question,
 } from '../lib/practice.ts'
+import { config } from '../config.ts'
 import { percent } from '../lib/progress.ts'
 
 export default function Session() {
@@ -55,6 +57,22 @@ export default function Session() {
         <Link to={`/course/${data.session.course_id}`} className="button">
           Back to course
         </Link>
+      </section>
+    )
+  }
+  if (data.questions.size === 0) {
+    // The database hides every question: the course was locked again, the account
+    // is no longer approved, or this is not the account's bound device.
+    return (
+      <section>
+        <h1>Questions locked</h1>
+        <p className="lead">{config.messages.noAccess}</p>
+        <ContactLink />
+        <p>
+          <Link to={`/course/${data.session.course_id}`} className="button">
+            Back to course
+          </Link>
+        </p>
       </section>
     )
   }

@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout.tsx'
+import RequireLogin from './components/RequireLogin.tsx'
 import Chapter from './pages/Chapter.tsx'
 import Course from './pages/Course.tsx'
 import Home from './pages/Home.tsx'
@@ -16,6 +17,7 @@ const Import = lazy(() => import('./pages/admin/Import.tsx'))
 const Stats = lazy(() => import('./pages/admin/Stats.tsx'))
 const Practice = lazy(() => import('./pages/Practice.tsx'))
 const Session = lazy(() => import('./pages/Session.tsx'))
+const SecurityCheck = lazy(() => import('./pages/SecurityCheck.tsx'))
 
 const loading = <p className="muted">Loading…</p>
 
@@ -29,25 +31,31 @@ export default function App() {
         <Route
           path="course/:courseId/practice"
           element={
-            <Suspense fallback={loading}>
-              <Practice />
-            </Suspense>
+            <RequireLogin>
+              <Suspense fallback={loading}>
+                <Practice />
+              </Suspense>
+            </RequireLogin>
           }
         />
         <Route
           path="session/:sessionId"
           element={
-            <Suspense fallback={loading}>
-              <Session />
-            </Suspense>
+            <RequireLogin>
+              <Suspense fallback={loading}>
+                <Session />
+              </Suspense>
+            </RequireLogin>
           }
         />
         <Route
           path="admin"
           element={
-            <Suspense fallback={loading}>
-              <AdminLayout />
-            </Suspense>
+            <RequireLogin>
+              <Suspense fallback={loading}>
+                <AdminLayout />
+              </Suspense>
+            </RequireLogin>
           }
         >
           <Route index element={<Students />} />
@@ -55,6 +63,16 @@ export default function App() {
           <Route path="import" element={<Import />} />
           <Route path="stats" element={<Stats />} />
         </Route>
+        <Route
+          path="security-check"
+          element={
+            <RequireLogin>
+              <Suspense fallback={loading}>
+                <SecurityCheck />
+              </Suspense>
+            </RequireLogin>
+          }
+        />
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<Signup />} />
         <Route path="*" element={<NotFound />} />

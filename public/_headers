@@ -1,0 +1,10 @@
+# Security headers for every page. Cloudflare Pages reads this file automatically.
+# - Content-Security-Policy: the browser may only run this site's own scripts and
+#   only talk to this site and Supabase (plus Cloudflare's optional analytics).
+# - frame-ancestors / X-Frame-Options: no other website can show ToothQBank inside a frame.
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.supabase.co; font-src 'self'; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://cloudflareinsights.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
