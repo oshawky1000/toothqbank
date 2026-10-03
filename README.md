@@ -7,6 +7,7 @@ MCQ question bank for dentistry students. See `CLAUDE.md` for the full project b
 - `src/config.ts`: price and contact messages (change them here)
 - `public/`: browser tab icon and phone home-screen icon
 - `data/`: question files (JSON), format in `docs/question-format.md`
+- `supabase/migrations/`: database changes (tables, security rules, seed data), applied in order in the Supabase SQL Editor
 - `docs/brand/tooth-original.jpg`: original logo image the icons were made from
 - `docs/CHANGELOG.md`: what each build phase added
 
@@ -14,6 +15,11 @@ MCQ question bank for dentistry students. See `CLAUDE.md` for the full project b
 - Framework preset: **React (Vite)**
 - Build command: `npm run build`
 - Build output directory: `dist`
+
+## Cloudflare Pages environment variables
+Set for both Production and Preview (values from Supabase > Project Settings > API Keys):
+- `VITE_SUPABASE_URL`
+- `VITE_SUPABASE_ANON_KEY` (the publishable key, starts with `sb_publishable_`)
 
 ## For developers
 ```
