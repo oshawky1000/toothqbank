@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useAuth } from '../auth/AuthContext.tsx'
 import { getDeviceId } from '../lib/device.ts'
+import { IMAGE_BUCKET } from '../lib/images.ts'
 import { supabase, supabaseAnonKey, supabaseUrl } from '../lib/supabase.ts'
 
 // /security-check: run this while logged in as a TEST STUDENT account.
@@ -14,6 +15,9 @@ type Check = { name: string; outcome?: Outcome }
 const pass = (detail: string): Outcome => ({ result: 'pass', detail })
 const fail = (detail: string): Outcome => ({ result: 'fail', detail })
 const skip = (detail: string): Outcome => ({ result: 'skip', detail })
+
+// A 1×1 pixel PNG, used to try an image upload.
+const TINY_PNG = 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg=='
 
 export default function SecurityCheck() {
   const { profile } = useAuth()
@@ -74,6 +78,67 @@ export default function SecurityCheck() {
         })
         const rows = response.ok ? ((await response.json()) as unknown[]) : []
         return rows.length === 0 ? pass('0 questions visible from another device.') : fail('Questions were visible from another device.')
+      },
+    ])
+
+    // Question images (private storage bucket). An image may only be loaded by
+    // someone who can read a question that uses it.
+    const imageCourses = coursesWithQuestions.filter((id) => !allowed.has(id))
+    list.push([
+      'See or open images of courses this account may not open',
+      async () => {
+        if (imageCourses.length === 0) return skip('Every course with questions is open for this account, so there is nothing to test.')
+        let listed = 0
+        for (const id of imageCourses) {
+          const { data } = await supabase.storage.from(IMAGE_BUCKET).list(id, { limit: 100 })
+          listed += (data ?? []).filter((f) => !f.name.startsWith('.')).length
+        }
+        if (listed > 0) return fail(`${listed} images of locked courses are visible.`)
+        // Also guess image names the way an attacker might (e.g. op1/op1-p001.jpg).
+        const guesses = imageCourses.map((id) => `${id}/${id}-p001.jpg`)
+        const { data: links } = await supabase.storage.from(IMAGE_BUCKET).createSignedUrls(guesses, 60)
+        const opened = (links ?? []).filter((l) => l.signedUrl && !l.error)
+        if (opened.length > 0) return fail(`Got a link to ${opened.map((l) => l.path).join(', ')}.`)
+        return pass(`No images visible or openable for: ${imageCourses.join(', ')}.`)
+      },
+    ])
+
+    list.push([
+      'See images from a different device',
+      async () => {
+        if (coursesWithQuestions.length === 0) return skip('No course has questions yet.')
+        const { data } = await supabase.auth.getSession()
+        let visible = 0
+        for (const id of coursesWithQuestions) {
+          const response = await fetch(`${supabaseUrl}/storage/v1/object/list/${IMAGE_BUCKET}`, {
+            method: 'POST',
+            headers: {
+              apikey: supabaseAnonKey,
+              authorization: `Bearer ${data.session?.access_token ?? ''}`,
+              'content-type': 'application/json',
+              'x-device-id': `security-check-other-device-${getDeviceId().slice(0, 4)}`,
+            },
+            body: JSON.stringify({ prefix: id, limit: 100, offset: 0 }),
+          })
+          const rows = response.ok ? ((await response.json()) as { name: string }[]) : []
+          visible += rows.filter((r) => !r.name.startsWith('.')).length
+        }
+        return visible === 0 ? pass('0 images visible from another device.') : fail(`${visible} images visible from another device.`)
+      },
+    ])
+
+    list.push([
+      'Upload a question image',
+      async () => {
+        const target = coursesWithQuestions[0] ?? 'gm1'
+        const path = `${target}/security-check-test.png`
+        const bytes = Uint8Array.from(atob(TINY_PNG), (c) => c.charCodeAt(0))
+        const { error } = await supabase.storage
+          .from(IMAGE_BUCKET)
+          .upload(path, new Blob([bytes], { type: 'image/png' }), { upsert: false })
+        if (error) return pass('The database refused.')
+        await supabase.storage.from(IMAGE_BUCKET).remove([path])
+        return fail(`Uploaded ${path}. Delete it in Supabase > Storage > question-images if it is still there.`)
       },
     ])
 
