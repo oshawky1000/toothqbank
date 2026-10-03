@@ -332,6 +332,283 @@ a {
   text-align: center;
 }
 
+/* Course layout: home, course and chapter pages */
+
+.home-intro {
+  margin-bottom: 32px;
+}
+
+.year {
+  margin-top: 32px;
+}
+
+.year-title {
+  font-size: 1.35rem;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 16px;
+}
+
+.semester {
+  margin-bottom: 28px;
+}
+
+.semester-title {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.course-card .course-meta,
+.course-card .course-price {
+  margin: 0;
+}
+
+.course-card .button,
+.course-card .unlock-help {
+  margin-top: auto;
+}
+
+.course-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.course-name {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.course-link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.course-coming-soon {
+  background: var(--bg-subtle);
+}
+
+.course-coming-soon .course-name {
+  color: var(--text-muted);
+}
+
+.course-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.badge {
+  flex-shrink: 0;
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badge-unlocked {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.badge-locked {
+  color: var(--text);
+}
+
+.unlock-help {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.coming-soon {
+  background: var(--bg-subtle);
+  color: var(--text-muted);
+}
+
+.coming-soon p {
+  margin: 0;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.eyebrow {
+  margin: 0 0 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text-muted);
+}
+
+.page-title-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin-bottom: 0.5em;
+}
+
+.page-title-row h1 {
+  margin: 0;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.lock-box {
+  margin-bottom: 16px;
+}
+
+.lock-box .muted {
+  margin-bottom: 8px;
+}
+
+.section-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.section-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+}
+
+.section-item + .section-item {
+  border-top: 1px solid var(--border);
+}
+
+.section-name {
+  font-weight: 600;
+}
+
+.section-count {
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.list-title {
+  margin-top: 32px;
+}
+
+.chapter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.chapter-list li + li {
+  border-top: 1px solid var(--border);
+}
+
+.chapter-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.chapter-row-link:hover {
+  background: var(--bg-subtle);
+}
+
+.chapter-number {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--bg-subtle);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chapter-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.chapter-name {
+  font-weight: 600;
+}
+
+.chapter-meta {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.chapter-arrow {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.progress-track {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--border);
+  overflow: hidden;
+}
+
+.progress-fill {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+
+.progress-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
 @media (min-width: 720px) {
   h1 {
     font-size: 2rem;
@@ -339,5 +616,9 @@ a {
 
   .main {
     padding-top: 48px;
+  }
+
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
