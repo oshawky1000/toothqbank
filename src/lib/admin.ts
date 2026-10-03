@@ -148,9 +148,7 @@ export function formatPhone(digits: string): string {
   return '+' + digits
 }
 
-export function formatDate(iso: string): string {
-  return new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
-}
+export { formatDate } from './format.ts'
 
 export const STATUS_LABELS: Record<AccountStatus, string> = {
   pending: 'Pending',
