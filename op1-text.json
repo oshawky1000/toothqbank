@@ -1,0 +1,4593 @@
+{
+  "format_version": 1,
+  "course": {
+    "id": "op1",
+    "name": "Oral Pathology 1",
+    "year": 3,
+    "semester": 1
+  },
+  "questions": [
+    {
+      "id": "OP1-T001",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Which term refers to the developmental anomaly that arises when a single tooth germ attempts to divide and results in the incomplete formation of two teeth?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fusion"
+        },
+        {
+          "key": "B",
+          "text": "Gemination"
+        },
+        {
+          "key": "C",
+          "text": "Concrescence"
+        },
+        {
+          "key": "D",
+          "text": "Dilaceration"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Gemination is an attempt of ONE tooth germ to divide, giving a bifid crown with a single root and a normal tooth count. Fusion is the joining of TWO germs, so the count is reduced by one.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T002",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Which tooth is the most common supernumerary tooth?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Distomolar"
+        },
+        {
+          "key": "B",
+          "text": "Mandibular lateral incisor"
+        },
+        {
+          "key": "C",
+          "text": "Paramolar"
+        },
+        {
+          "key": "D",
+          "text": "Mesiodens"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The mesiodens, between the maxillary central incisors, is the most common supernumerary tooth.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T003",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Which term refers to a developmental anomaly in which teeth exhibit elongated, large pulp chambers and short roots?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dentinogenesis imperfecta"
+        },
+        {
+          "key": "B",
+          "text": "Taurodontism"
+        },
+        {
+          "key": "C",
+          "text": "Concrescence"
+        },
+        {
+          "key": "D",
+          "text": "Mulberry molar"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Taurodontism ('bull teeth') shows an elongated, enlarged pulp chamber with an apically displaced floor and short roots, mainly in molars.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T004",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Union of two adjacent teeth by cementum only is known as:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fusion"
+        },
+        {
+          "key": "B",
+          "text": "Gemination"
+        },
+        {
+          "key": "C",
+          "text": "Dilaceration"
+        },
+        {
+          "key": "D",
+          "text": "Concrescence"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Concrescence is the union of two adjacent teeth by cementum ONLY, after root formation. Fusion joins dentin and/or enamel.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T005",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Ectodermal dysplasia affects all of the following structures except:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hair"
+        },
+        {
+          "key": "B",
+          "text": "Nails"
+        },
+        {
+          "key": "C",
+          "text": "Teeth"
+        },
+        {
+          "key": "D",
+          "text": "Bone"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Ectodermal dysplasia affects ectodermal structures: hair, nails, teeth, sweat glands and skin. Bone is mesodermal, so it is not affected.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T006",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Pseudo-anodontia is one of the features of:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cleidocranial dysplasia"
+        },
+        {
+          "key": "B",
+          "text": "Amelogenesis imperfecta"
+        },
+        {
+          "key": "C",
+          "text": "Streeter's syndrome"
+        },
+        {
+          "key": "D",
+          "text": "Dentinogenesis imperfecta"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In cleidocranial dysplasia permanent and supernumerary teeth form but fail to erupt, so the mouth looks toothless: pseudo-anodontia.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T007",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Lack of secondary cementum is one of the dental manifestations of cleidocranial dysplasia.",
+      "options": [
+        {
+          "key": "A",
+          "text": "False"
+        },
+        {
+          "key": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "B",
+      "explanation": "True. Teeth in cleidocranial dysplasia lack secondary (cellular) cementum, which is one reason they fail to erupt.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T008",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "A 3-year-old child has only the deciduous canines and the first molars. There was neither a history of trauma nor were there missing teeth that were extracted. The child had light fine hair, fair complexion and a facial appearance of an older person. This condition most likely represents:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Congenital syphilis"
+        },
+        {
+          "key": "B",
+          "text": "Hereditary ectodermal dysplasia"
+        },
+        {
+          "key": "C",
+          "text": "Cleidocranial dysplasia"
+        },
+        {
+          "key": "D",
+          "text": "Osteogenesis imperfecta"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Very few teeth (hypodontia), fine light hair, fair skin and an 'aged' face are classic hereditary (hypohidrotic) ectodermal dysplasia.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T009",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "All the following are clinical features of Streeter's syndrome, except:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Xerostomia"
+        },
+        {
+          "key": "B",
+          "text": "Dry skin"
+        },
+        {
+          "key": "C",
+          "text": "Defective nails"
+        },
+        {
+          "key": "D",
+          "text": "Hyperdontia"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Streeter's syndrome (the course's name for this ectodermal condition) causes xerostomia, dry skin and defective nails with MISSING teeth (hypodontia), not hyperdontia.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T010",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "A trauma to a tooth may lead to:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dilaceration"
+        },
+        {
+          "key": "B",
+          "text": "Hutchinson's incisor"
+        },
+        {
+          "key": "C",
+          "text": "Talon cusp"
+        },
+        {
+          "key": "D",
+          "text": "A supernumerary tooth"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Trauma to a developing tooth can displace the formed part, so the rest of the tooth continues at an angle: dilaceration. Hutchinson's incisors are from congenital syphilis.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T011",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Talon cusp is most commonly seen:",
+      "options": [
+        {
+          "key": "A",
+          "text": "On the lingual surface of the lower permanent incisors"
+        },
+        {
+          "key": "B",
+          "text": "On the occlusal surface of upper permanent molars"
+        },
+        {
+          "key": "C",
+          "text": "On the lingual surface of upper permanent incisors"
+        },
+        {
+          "key": "D",
+          "text": "On the occlusal surface of lower permanent molars"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A talon cusp is an extra cusp on the lingual (cingulum) area of the upper permanent incisors, often shaped like an eagle's talon.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T012",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Delayed shedding of deciduous teeth and delayed eruption of permanent teeth are seen in:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Facial hemihypertrophy"
+        },
+        {
+          "key": "B",
+          "text": "Streeter's syndrome"
+        },
+        {
+          "key": "C",
+          "text": "Cleidocranial dysplasia"
+        },
+        {
+          "key": "D",
+          "text": "Congenital syphilis"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Cleidocranial dysplasia causes prolonged retention of deciduous teeth and delayed or failed eruption of the permanent and supernumerary teeth.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T013",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Hutchinson's incisors are:",
+      "options": [
+        {
+          "key": "A",
+          "text": "An acquired condition affecting permanent teeth"
+        },
+        {
+          "key": "B",
+          "text": "A hereditary condition affecting permanent teeth"
+        },
+        {
+          "key": "C",
+          "text": "A hereditary condition affecting both dentitions"
+        },
+        {
+          "key": "D",
+          "text": "An acquired condition affecting only deciduous teeth"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Hutchinson's incisors (screwdriver-shaped, notched incisal edge) are caused by congenital syphilis, an ACQUIRED (infectious) condition, and affect the permanent incisors.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T014",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Among the clinical features of Streeter's syndrome:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dry skin"
+        },
+        {
+          "key": "B",
+          "text": "Defective nails"
+        },
+        {
+          "key": "C",
+          "text": "Xerostomia"
+        },
+        {
+          "key": "D",
+          "text": "All of the above"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Streeter's syndrome in this course includes dry skin, defective nails and xerostomia, so all of the above.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T015",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Which location is the most likely for an enamel pearl?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Maxillary molar"
+        },
+        {
+          "key": "B",
+          "text": "Maxillary second premolar"
+        },
+        {
+          "key": "C",
+          "text": "Mandibular premolars"
+        },
+        {
+          "key": "D",
+          "text": "Mandibular molar"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Enamel pearls are most common on the maxillary molars, usually at the furcation or near the CEJ.",
+      "answer_status": "corrected",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T016",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Developmental defects in the shape of teeth are due to disturbances in the:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Initiation phase of tooth development"
+        },
+        {
+          "key": "B",
+          "text": "Proliferation phase of tooth development"
+        },
+        {
+          "key": "C",
+          "text": "Appositional phase of tooth development"
+        },
+        {
+          "key": "D",
+          "text": "Morpho-differentiation phase of tooth development"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Abnormalities of tooth SHAPE arise during morpho-differentiation (bell stage), when the crown pattern is laid down. Initiation affects tooth number; apposition affects structure.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T017",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Teeth which exhibit a yellow or brown-gray discoloration and fluoresce bright yellow under ultraviolet light have most probably been affected by:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tetracycline staining"
+        },
+        {
+          "key": "B",
+          "text": "Endemic fluorosis"
+        },
+        {
+          "key": "C",
+          "text": "Amelogenesis imperfecta"
+        },
+        {
+          "key": "D",
+          "text": "Dentinogenesis imperfecta"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Tetracycline binds calcium in the developing teeth, giving yellow to brown-grey discoloration that fluoresces bright yellow under ultraviolet light.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T018",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Dentinogenesis imperfecta type III is associated with osteogenesis imperfecta.",
+      "options": [
+        {
+          "key": "A",
+          "text": "True"
+        },
+        {
+          "key": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "B",
+      "explanation": "False. Osteogenesis imperfecta is associated with dentinogenesis imperfecta TYPE I. Type II occurs alone, and type III is the Brandywine isolate (shell teeth).",
+      "answer_status": "corrected",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T019",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Tetracycline ingestion during tooth development causes:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Supernumerary teeth"
+        },
+        {
+          "key": "B",
+          "text": "Pulpal calcification"
+        },
+        {
+          "key": "C",
+          "text": "Tooth discoloration"
+        },
+        {
+          "key": "D",
+          "text": "Delayed eruption"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Tetracycline taken while teeth are forming causes intrinsic tooth discoloration (yellow-brown, grey).",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T020",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Which of the following conditions affects both deciduous and permanent teeth?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dentinogenesis imperfecta"
+        },
+        {
+          "key": "B",
+          "text": "Turner's tooth"
+        },
+        {
+          "key": "C",
+          "text": "Talon cusp"
+        },
+        {
+          "key": "D",
+          "text": "Congenital syphilis"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Dentinogenesis imperfecta is hereditary, so it affects BOTH dentitions. Turner's tooth, Hutchinson's incisors (congenital syphilis) and talon cusp affect individual permanent teeth.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T021",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Turner's tooth is a condition caused by enamel hypoplasia due to:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hypocalcemia"
+        },
+        {
+          "key": "B",
+          "text": "Congenital syphilis"
+        },
+        {
+          "key": "C",
+          "text": "Local infection or trauma"
+        },
+        {
+          "key": "D",
+          "text": "Birth injury"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Turner's tooth is a localized enamel hypoplasia of a permanent tooth caused by periapical infection or trauma of the overlying deciduous tooth.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T022",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Hereditary teeth defects affect all teeth while acquired defects affect a single tooth or a group of teeth.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Both statements are correct"
+        },
+        {
+          "key": "B",
+          "text": "The 1st statement is false while the 2nd one is correct"
+        },
+        {
+          "key": "C",
+          "text": "Both statements are false"
+        },
+        {
+          "key": "D",
+          "text": "The 1st statement is correct while the second one is false"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Both are correct: hereditary defects (e.g. amelogenesis imperfecta) affect all teeth, while acquired defects (e.g. Turner's tooth, local trauma) affect one tooth or a group formed at the same time.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "dev",
+      "images": []
+    },
+    {
+      "id": "OP1-T023",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "The microorganism primarily responsible for the initiation of dental caries is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pneumococcus"
+        },
+        {
+          "key": "B",
+          "text": "Lactobacillus acidophilus"
+        },
+        {
+          "key": "C",
+          "text": "Staphylococcus"
+        },
+        {
+          "key": "D",
+          "text": "Streptococcus mutans"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Streptococcus mutans initiates caries: it is acidogenic, aciduric and makes sticky extracellular glucans (dextran) from sucrose. Lactobacilli are mainly involved in the progression of established lesions.",
+      "answer_status": "confirmed",
+      "times_seen": 2,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T024",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Contributing factors in dental caries are:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Susceptible tooth, fermentable carbohydrates, dental plaque and age"
+        },
+        {
+          "key": "B",
+          "text": "Susceptible tooth, saliva, fermentable carbohydrates, micro-organisms and time"
+        },
+        {
+          "key": "C",
+          "text": "Susceptible tooth, saliva, dental plaque, micro-organisms and age"
+        },
+        {
+          "key": "D",
+          "text": "Susceptible tooth, non-fermentable carbohydrates, micro-organisms and time"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Caries needs a susceptible tooth (host), saliva, fermentable carbohydrates, micro-organisms and time. The other options each miss an essential factor or include non-fermentable carbohydrates.",
+      "answer_status": "corrected",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T025",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "The teeth that are most resistant to caries are:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Teeth with enamel hypoplasia"
+        },
+        {
+          "key": "B",
+          "text": "Normal teeth"
+        },
+        {
+          "key": "C",
+          "text": "Teeth with enamel hypocalcification"
+        },
+        {
+          "key": "D",
+          "text": "Teeth with mild fluorosis"
+        },
+        {
+          "key": "E",
+          "text": "Malposed teeth"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Mild fluorosis means the enamel contains more fluorapatite, which is less soluble in acid, so these teeth are the most caries resistant. Hypoplasia, hypocalcification and malposition all increase risk.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T026",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "The process of dental caries comprises:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Demineralization of the tooth substance and proteolysis of the softened matrix by microorganisms"
+        },
+        {
+          "key": "B",
+          "text": "Destruction of tooth substance by anaerobic bacteria"
+        },
+        {
+          "key": "C",
+          "text": "Demineralization of enamel and dentin exclusively by acids"
+        },
+        {
+          "key": "D",
+          "text": "Lysis of organic tooth substances by proteolytic bacteria and liquefaction of dentin"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Caries is a two-stage process: acids from bacterial fermentation demineralize the inorganic part of the tooth, then proteolytic bacteria break down the softened organic matrix.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T027",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "The carbohydrate having the most cariogenic potential is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fructose, because it is a major component in fruits"
+        },
+        {
+          "key": "B",
+          "text": "Sucrose, because of its low molecular weight and easy diffusibility into the plaque"
+        },
+        {
+          "key": "C",
+          "text": "Starch, because of its long monosaccharide chain whose breakdown supplies energy to the cariogenic bacteria"
+        },
+        {
+          "key": "D",
+          "text": "Sucrose, because it acts as a store for carbohydrates"
+        },
+        {
+          "key": "E",
+          "text": "Fructose, because it is sticky and found in honey"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sucrose is the most cariogenic sugar: its small molecule diffuses easily into plaque, and S. mutans uses it to make sticky extracellular glucans (dextran) that help bacteria adhere.",
+      "answer_status": "confirmed",
+      "times_seen": 3,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T028",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Regarding dental caries, which of the following is true?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Lactobacilli are the bacteria that are the main cause of dental caries"
+        },
+        {
+          "key": "B",
+          "text": "Cariogenic bacteria produce organic acids"
+        },
+        {
+          "key": "C",
+          "text": "Xylitol is a cariogenic substrate"
+        },
+        {
+          "key": "D",
+          "text": "Lactobacilli can produce pit and fissure caries"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Lactobacilli can produce pit and fissure caries (in gnotobiotic animal studies) but not smooth surface caries; they are not the main initiators of caries (that is S. mutans), and xylitol is non-cariogenic. Note: 'cariogenic bacteria produce organic acids' is also a true fact, so read this question carefully.",
+      "answer_status": "corrected",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T029",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Dextran:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Is an adhesive water soluble fructose polymer"
+        },
+        {
+          "key": "B",
+          "text": "Is an adhesive water insoluble glucose polymer"
+        },
+        {
+          "key": "C",
+          "text": "Is a non-adhesive water soluble fructose polymer"
+        },
+        {
+          "key": "D",
+          "text": "Is an adhesive water soluble galactose polymer"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Dextran is a glucose polymer that S. mutans makes from sucrose. It is sticky (adhesive) and water-insoluble, so it builds the plaque matrix. Levan is the fructose polymer.",
+      "answer_status": "verified",
+      "times_seen": 2,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T030",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Which of the following statements are correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "S. mutans are acidogenic and aciduric"
+        },
+        {
+          "key": "B",
+          "text": "S. mutans can produce pit and fissure caries only"
+        },
+        {
+          "key": "C",
+          "text": "S. mutans are transmissible and can produce amylopectin"
+        },
+        {
+          "key": "D",
+          "text": "(A & B) only are correct"
+        },
+        {
+          "key": "E",
+          "text": "(A & C) only are correct"
+        },
+        {
+          "key": "F",
+          "text": "(A, B & C) are correct"
+        }
+      ],
+      "answer": "E",
+      "explanation": "S. mutans is acidogenic and aciduric, is transmissible (often from mother to child) and can store intracellular polysaccharide (amylopectin-like). It causes smooth surface caries too, so 'pit and fissure only' is wrong.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T031",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "The clinical significance of sclerotic dentin is that it is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Soft"
+        },
+        {
+          "key": "B",
+          "text": "Dark brown"
+        },
+        {
+          "key": "C",
+          "text": "Hypersensitive"
+        },
+        {
+          "key": "D",
+          "text": "Resistant to caries"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Sclerotic (transparent) dentin forms when tubules are blocked with mineral. It is harder and less permeable, so it is more resistant to caries and acts as a defensive barrier.",
+      "answer_status": "corrected",
+      "times_seen": 2,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T032",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Rats raised in a germ-free environment will develop dental caries if:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Specific strains of cariogenic microorganisms are introduced into their oral cavity associated with feeding with a non-fermentable carbohydrate diet"
+        },
+        {
+          "key": "B",
+          "text": "They are fed a high protein diet"
+        },
+        {
+          "key": "C",
+          "text": "Specific strains of cariogenic microorganisms are introduced into their oral cavity associated with feeding with a high fermentable carbohydrate diet"
+        },
+        {
+          "key": "D",
+          "text": "They are fed a high sugar diet"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Germ-free animals do not get caries. They develop it only when specific cariogenic bacteria are introduced AND they are fed fermentable carbohydrate: both factors are needed.",
+      "answer_status": "confirmed",
+      "times_seen": 2,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T033",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Gnotobiotic animals are:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Germ free"
+        },
+        {
+          "key": "B",
+          "text": "Animals with a known strain of microorganisms"
+        },
+        {
+          "key": "C",
+          "text": "Animals fed with a high CHO diet"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Gnotobiotic animals are animals whose microbial flora is fully known (e.g. germ-free animals inoculated with a known strain). This is how specific bacteria were proven cariogenic.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T034",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Gustafson, with the Vipeholm experiment, demonstrated the role of:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Carbohydrates in dental caries"
+        },
+        {
+          "key": "B",
+          "text": "Saliva in dental caries"
+        },
+        {
+          "key": "C",
+          "text": "Micro-organisms in dental caries"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Gustafson's Vipeholm study showed the role of CARBOHYDRATES: sugar eaten between meals and in sticky forms caused far more caries than the same sugar taken with meals.",
+      "answer_status": "verified",
+      "times_seen": 3,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T035",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Contributing factors of dental caries include all of the following, except:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Carbohydrates"
+        },
+        {
+          "key": "B",
+          "text": "Bacteria"
+        },
+        {
+          "key": "C",
+          "text": "Viruses"
+        },
+        {
+          "key": "D",
+          "text": "Host"
+        },
+        {
+          "key": "E",
+          "text": "Saliva"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Caries depends on the host (tooth), saliva, carbohydrate substrate, bacteria and time. Viruses play no role.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T036",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "The main factor influencing the cariogenicity of carbohydrates is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Frequency of carbohydrate intake"
+        },
+        {
+          "key": "B",
+          "text": "Total amount of carbohydrate intake"
+        },
+        {
+          "key": "C",
+          "text": "Type of carbohydrates ingested"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The FREQUENCY of carbohydrate intake matters most: every exposure drops plaque pH below the critical level, so frequent snacking is worse than the same amount eaten at once (Vipeholm).",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T037",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "The pioneer micro-organisms invading dentine are the same pioneer organisms noted in initial dental plaque formation.",
+      "options": [
+        {
+          "key": "A",
+          "text": "False"
+        },
+        {
+          "key": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The pioneer bacteria in dentin caries are mainly lactobacilli (and other acidogenic and proteolytic organisms), not the streptococci and actinomyces that first colonize a clean tooth surface.",
+      "answer_status": "confirmed",
+      "times_seen": 3,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T038",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "The cariostatic effect of fluoride is mainly due to all of the following, except:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Its ability to change the fluoroapatite crystal lattice into the stronger more resistant hydroxyapatite crystal lattice"
+        },
+        {
+          "key": "B",
+          "text": "It facilitates re-mineralization of the tooth structure"
+        },
+        {
+          "key": "C",
+          "text": "Its bacteriostatic effect"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Fluoride converts HYDROXYAPATITE into the more acid-resistant FLUORAPATITE (the option reverses this), promotes remineralization and is bacteriostatic.",
+      "answer_status": "confirmed",
+      "times_seen": 2,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T039",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Acute (rampant) caries is characteristically seen in:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Young patients"
+        },
+        {
+          "key": "B",
+          "text": "Old patients"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Acute (rampant) caries progresses rapidly and is typical of children and young patients; chronic caries progresses slowly and is seen in older adults.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T040",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Streptococcus mutans is considered to be the pioneer micro-organism in the initial community of plaque.",
+      "options": [
+        {
+          "key": "A",
+          "text": "False"
+        },
+        {
+          "key": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "A",
+      "explanation": "S. mutans is not the pioneer. The first colonizers of a clean pellicle are Streptococcus sanguis and Actinomyces viscosus; S. mutans joins later.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T041",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Enamel hypoplasia and enamel hypocalcification:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Do not have an effect on either the initiation or the progression of dental caries"
+        },
+        {
+          "key": "B",
+          "text": "Affect the rate of initiation, and not the rate of progression of dental caries"
+        },
+        {
+          "key": "C",
+          "text": "Affect the rate of progression, and not the initiation of dental caries"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Enamel hypoplasia and hypocalcification do not start caries by themselves, but once a lesion begins they make it progress faster. They affect the rate of progression, not initiation.",
+      "answer_status": "confirmed",
+      "times_seen": 2,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T042",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Which of the following statements is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Streptococcus mutans can produce amylopectin"
+        },
+        {
+          "key": "B",
+          "text": "Streptococcus mutans can produce pit and fissure caries only"
+        },
+        {
+          "key": "C",
+          "text": "Both a and d"
+        },
+        {
+          "key": "D",
+          "text": "Streptococcus mutans are acidogenic and aciduric"
+        }
+      ],
+      "answer": "C",
+      "explanation": "S. mutans can produce amylopectin (intracellular storage polysaccharide) AND it is acidogenic and aciduric, so both a and d are correct. It does not cause pit and fissure caries only.",
+      "answer_status": "confirmed",
+      "times_seen": 2,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T043",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Miller's experiment proved the role of carbohydrates in dental caries.",
+      "options": [
+        {
+          "key": "A",
+          "text": "False"
+        },
+        {
+          "key": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "A",
+      "explanation": "False. Miller's chemo-parasitic theory showed that bacteria produce acid that dissolves enamel; the role of dietary carbohydrates was demonstrated by Gustafson's Vipeholm study.",
+      "answer_status": "confirmed",
+      "times_seen": 2,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T044",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Caries is best defined as progressive, reversible bacterial damage to the hard dental structures present in the oral cavity.",
+      "options": [
+        {
+          "key": "A",
+          "text": "False"
+        },
+        {
+          "key": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "A",
+      "explanation": "False. Caries is progressive and IRREVERSIBLE bacterial destruction of the hard dental tissues (only the very early white spot lesion can remineralize).",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T045",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "The arch criminal of dental caries is considered to be:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Plaque"
+        },
+        {
+          "key": "B",
+          "text": "Streptococcus mutans"
+        },
+        {
+          "key": "C",
+          "text": "Sucrose"
+        },
+        {
+          "key": "D",
+          "text": "Glucose"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Sucrose is the 'arch criminal' of dental caries: it is the substrate S. mutans uses to make acid and sticky dextran.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T046",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "The critical pH is the pH at which:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dextran starts to form"
+        },
+        {
+          "key": "B",
+          "text": "Demineralization starts"
+        },
+        {
+          "key": "C",
+          "text": "Streptococcus mutans invades plaque"
+        },
+        {
+          "key": "D",
+          "text": "Sucrose is fermented"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The critical pH (about 5.5) is the pH at which plaque fluid becomes unsaturated with calcium and phosphate, so enamel demineralization starts.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T047",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "The acquired enamel pellicle is formed of:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Bacteria and glycoproteins"
+        },
+        {
+          "key": "B",
+          "text": "Desquamated cells and glycoproteins"
+        },
+        {
+          "key": "C",
+          "text": "Glycoproteins without any cells"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The acquired pellicle is a thin, cell-free film of salivary glycoproteins that forms on a clean tooth within minutes. Bacteria attach to it afterwards to form plaque.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T048",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Newly erupted teeth are considered to be more caries susceptible than older ones.",
+      "options": [
+        {
+          "key": "A",
+          "text": "False"
+        },
+        {
+          "key": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "B",
+      "explanation": "True. Newly erupted teeth have not completed post-eruptive maturation (enamel is less mineralized and has less fluoride), so they are more susceptible to caries.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T049",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Dental caries is defined as",
+      "options": [
+        {
+          "key": "A",
+          "text": "Reversible bacterial destruction of enamel"
+        },
+        {
+          "key": "B",
+          "text": "Progressive, irreversible bacterial destruction of tooth structure"
+        },
+        {
+          "key": "C",
+          "text": "Mechanical wear of enamel"
+        },
+        {
+          "key": "D",
+          "text": "Demineralization only without bacterial involvement"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Caries is progressive, irreversible destruction of tooth structure by bacterial acids. Mechanical wear is attrition/abrasion.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T050",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "The most common type of dental caries is",
+      "options": [
+        {
+          "key": "A",
+          "text": "Smooth surface"
+        },
+        {
+          "key": "B",
+          "text": "Cemental"
+        },
+        {
+          "key": "C",
+          "text": "Pit and fissure"
+        },
+        {
+          "key": "D",
+          "text": "Recurrent"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Pit and fissure caries is most common because the fissures trap food and plaque and are hard to clean.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T051",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Cemental (root) caries is commonly associated with",
+      "options": [
+        {
+          "key": "A",
+          "text": "Gingival recession"
+        },
+        {
+          "key": "B",
+          "text": "Young age"
+        },
+        {
+          "key": "C",
+          "text": "Fluorosis"
+        },
+        {
+          "key": "D",
+          "text": "High saliva flow"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Gingival recession exposes cementum, so root caries is typical of older adults with recession.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T052",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Recurrent caries occurs",
+      "options": [
+        {
+          "key": "A",
+          "text": "After endodontic treatment"
+        },
+        {
+          "key": "B",
+          "text": "Around existing restorations"
+        },
+        {
+          "key": "C",
+          "text": "On root surfaces"
+        },
+        {
+          "key": "D",
+          "text": "In newly erupted teeth"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Recurrent (secondary) caries starts at the margins of existing restorations.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T053",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Acute caries is more common in",
+      "options": [
+        {
+          "key": "A",
+          "text": "Children"
+        },
+        {
+          "key": "B",
+          "text": "Adults"
+        },
+        {
+          "key": "C",
+          "text": "Elderly"
+        },
+        {
+          "key": "D",
+          "text": "None of the above"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Acute (rampant) caries progresses quickly and is more common in children and young people.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T054",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Chronic caries affects mostly",
+      "options": [
+        {
+          "key": "A",
+          "text": "Primary teeth"
+        },
+        {
+          "key": "B",
+          "text": "Older adults"
+        },
+        {
+          "key": "C",
+          "text": "Newly erupted teeth"
+        },
+        {
+          "key": "D",
+          "text": "None"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Chronic caries progresses slowly and is mostly seen in older adults.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T055",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Posterior teeth are more susceptible to caries because",
+      "options": [
+        {
+          "key": "A",
+          "text": "They are less mineralized"
+        },
+        {
+          "key": "B",
+          "text": "They have pits and fissures"
+        },
+        {
+          "key": "C",
+          "text": "They are exposed to saliva"
+        },
+        {
+          "key": "D",
+          "text": "They have small pulp chambers"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Pits and fissures on posterior teeth retain plaque and food, making them more susceptible.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T056",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Enamel hypoplasia affects",
+      "options": [
+        {
+          "key": "A",
+          "text": "Caries initiation"
+        },
+        {
+          "key": "B",
+          "text": "Rate of progression"
+        },
+        {
+          "key": "C",
+          "text": "Plaque formation"
+        },
+        {
+          "key": "D",
+          "text": "Fluoride uptake"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Enamel hypoplasia does not start caries but speeds up its progression once it begins.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T057",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Newly erupted teeth are more caries susceptible because",
+      "options": [
+        {
+          "key": "A",
+          "text": "They are larger"
+        },
+        {
+          "key": "B",
+          "text": "They lack post-eruptive maturation"
+        },
+        {
+          "key": "C",
+          "text": "They are fully mineralized"
+        },
+        {
+          "key": "D",
+          "text": "They have less dentine"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Newly erupted teeth have not completed post-eruptive maturation, so the enamel is less resistant.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T058",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "The cariostatic effect of fluoride includes",
+      "options": [
+        {
+          "key": "A",
+          "text": "Increasing plaque acidity"
+        },
+        {
+          "key": "B",
+          "text": "Conversion to fluoroapatite"
+        },
+        {
+          "key": "C",
+          "text": "Softening enamel"
+        },
+        {
+          "key": "D",
+          "text": "Inhibiting Ca absorption"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Fluoride converts hydroxyapatite into more acid-resistant fluorapatite, promotes remineralization and is bacteriostatic.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T059",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Saliva protects against caries mainly by",
+      "options": [
+        {
+          "key": "A",
+          "text": "Washing and buffering"
+        },
+        {
+          "key": "B",
+          "text": "Lowering pH"
+        },
+        {
+          "key": "C",
+          "text": "Increasing plaque adhesion"
+        },
+        {
+          "key": "D",
+          "text": "Reducing fluoride"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Saliva protects mainly by washing (clearance) and buffering acids, besides antibacterial and remineralizing actions.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T060",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "The antibacterial components of saliva include",
+      "options": [
+        {
+          "key": "A",
+          "text": "Lysozyme, lactoferrin, peroxidase"
+        },
+        {
+          "key": "B",
+          "text": "Collagenase and elastase"
+        },
+        {
+          "key": "C",
+          "text": "Calcium and phosphate"
+        },
+        {
+          "key": "D",
+          "text": "Immunoglobulin G only"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Lysozyme, lactoferrin and the peroxidase system are the antibacterial components of saliva.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T061",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Sucrose is considered the ‘arch criminal’ because",
+      "options": [
+        {
+          "key": "A",
+          "text": "It diffuses rapidly and supports bacterial adhesion"
+        },
+        {
+          "key": "B",
+          "text": "It neutralizes acid"
+        },
+        {
+          "key": "C",
+          "text": "It forms fluoride"
+        },
+        {
+          "key": "D",
+          "text": "It reduces plaque"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Sucrose diffuses rapidly into plaque and is used to make sticky extracellular glucans that help bacteria adhere.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T062",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Sticky carbohydrates are more cariogenic because",
+      "options": [
+        {
+          "key": "A",
+          "text": "They wash away quickly"
+        },
+        {
+          "key": "B",
+          "text": "They remain longer for acid production"
+        },
+        {
+          "key": "C",
+          "text": "They reduce bacterial count"
+        },
+        {
+          "key": "D",
+          "text": "They contain protein"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sticky carbohydrates stay on the teeth longer, so bacteria have more time to make acid.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T063",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Refinement of carbohydrates increases caries risk because",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fibers are removed"
+        },
+        {
+          "key": "B",
+          "text": "Fluoride is added"
+        },
+        {
+          "key": "C",
+          "text": "Sugars become alkaline"
+        },
+        {
+          "key": "D",
+          "text": "Water content increases"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Refining removes fibre, leaving soft, sticky carbohydrate that clings to teeth.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T064",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "The Vipeholm study concluded that",
+      "options": [
+        {
+          "key": "A",
+          "text": "Frequency of sugar intake increases caries"
+        },
+        {
+          "key": "B",
+          "text": "Total sugar amount is the main factor"
+        },
+        {
+          "key": "C",
+          "text": "Diet texture has no effect"
+        },
+        {
+          "key": "D",
+          "text": "Fluoride prevents all caries"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Vipeholm showed that the FREQUENCY of sugar intake (especially between meals) matters more than the total amount.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T065",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Orland’s experiment demonstrated",
+      "options": [
+        {
+          "key": "A",
+          "text": "Caries can occur without microorganisms"
+        },
+        {
+          "key": "B",
+          "text": "Germ-free rats do not develop caries"
+        },
+        {
+          "key": "C",
+          "text": "Fluoride increases bacteria"
+        },
+        {
+          "key": "D",
+          "text": "None"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Orland showed that germ-free rats do not develop caries even on a high-sugar diet: bacteria are essential.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T066",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "The main acidogenic bacteria in caries are",
+      "options": [
+        {
+          "key": "A",
+          "text": "Streptococcus mutans and Lactobacilli"
+        },
+        {
+          "key": "B",
+          "text": "Staphylococcus aureus"
+        },
+        {
+          "key": "C",
+          "text": "E. coli"
+        },
+        {
+          "key": "D",
+          "text": "Candida albicans"
+        }
+      ],
+      "answer": "A",
+      "explanation": "S. mutans and lactobacilli are the main acidogenic (acid-producing) caries bacteria.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T067",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Proteolytic bacteria include",
+      "options": [
+        {
+          "key": "A",
+          "text": "Actinomyces"
+        },
+        {
+          "key": "B",
+          "text": "Streptococci"
+        },
+        {
+          "key": "C",
+          "text": "Lactobacilli"
+        },
+        {
+          "key": "D",
+          "text": "Spirochetes"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Actinomyces are proteolytic and help break down the organic matrix, especially in root and dentin caries.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T068",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Dental plaque is defined as",
+      "options": [
+        {
+          "key": "A",
+          "text": "A calcified deposit"
+        },
+        {
+          "key": "B",
+          "text": "A bacterial biofilm adherent to tooth surface"
+        },
+        {
+          "key": "C",
+          "text": "Food debris"
+        },
+        {
+          "key": "D",
+          "text": "Dead tissue"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Dental plaque is a bacterial biofilm firmly adherent to the tooth surface, not just food debris.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T069",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "The supragingival plaque is located",
+      "options": [
+        {
+          "key": "A",
+          "text": "Above gingival margin"
+        },
+        {
+          "key": "B",
+          "text": "Below gingival margin"
+        },
+        {
+          "key": "C",
+          "text": "Inside dentinal tubules"
+        },
+        {
+          "key": "D",
+          "text": "None"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Supragingival plaque lies above the gingival margin; subgingival plaque lies below it.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T070",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "The main inorganic component of plaque is",
+      "options": [
+        {
+          "key": "A",
+          "text": "Calcium and phosphate"
+        },
+        {
+          "key": "B",
+          "text": "Sodium chloride"
+        },
+        {
+          "key": "C",
+          "text": "Protein"
+        },
+        {
+          "key": "D",
+          "text": "Collagen"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Calcium and phosphate are the main inorganic components of plaque.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T071",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Plaque matrix retains acids by",
+      "options": [
+        {
+          "key": "A",
+          "text": "Increasing diffusion"
+        },
+        {
+          "key": "B",
+          "text": "Acting as a diffusion barrier"
+        },
+        {
+          "key": "C",
+          "text": "Neutralizing pH"
+        },
+        {
+          "key": "D",
+          "text": "Removing polysaccharides"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The plaque matrix acts as a diffusion barrier, holding acids against the enamel and keeping saliva's buffers out.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T072",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "The first bacteria to colonize clean tooth surfaces are",
+      "options": [
+        {
+          "key": "A",
+          "text": "Streptococcus sanguis and Actinomyces viscosus"
+        },
+        {
+          "key": "B",
+          "text": "S. mutans"
+        },
+        {
+          "key": "C",
+          "text": "Lactobacillus"
+        },
+        {
+          "key": "D",
+          "text": "Fusobacterium"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Streptococcus sanguis and Actinomyces viscosus are the first colonizers of a clean pellicle.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T073",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Streptococcus mutans produces",
+      "options": [
+        {
+          "key": "A",
+          "text": "Extracellular dextran and levan"
+        },
+        {
+          "key": "B",
+          "text": "Intracellular cellulose"
+        },
+        {
+          "key": "C",
+          "text": "Collagenase"
+        },
+        {
+          "key": "D",
+          "text": "Elastase"
+        }
+      ],
+      "answer": "A",
+      "explanation": "S. mutans makes extracellular dextran (glucan) and levan (fructan) from sucrose.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T074",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Mature plaque shows ‘corn cob’ arrangement formed by",
+      "options": [
+        {
+          "key": "A",
+          "text": "Filamentous actinomyces surrounded by cocci"
+        },
+        {
+          "key": "B",
+          "text": "Streptococci only"
+        },
+        {
+          "key": "C",
+          "text": "Spirochetes"
+        },
+        {
+          "key": "D",
+          "text": "Bacteroides"
+        }
+      ],
+      "answer": "A",
+      "explanation": "'Corn cob' formations in mature plaque are filamentous bacteria (actinomyces) coated by cocci.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T075",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Stephan’s curve shows",
+      "options": [
+        {
+          "key": "A",
+          "text": "Rapid drop in plaque pH after sugar intake"
+        },
+        {
+          "key": "B",
+          "text": "Rise in saliva pH"
+        },
+        {
+          "key": "C",
+          "text": "Increase in oxygen tension"
+        },
+        {
+          "key": "D",
+          "text": "Bacterial death"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Stephan's curve shows the rapid drop in plaque pH after a sugar rinse and its slow recovery.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T076",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "The critical pH for enamel demineralization is approximately",
+      "options": [
+        {
+          "key": "A",
+          "text": "5.5"
+        },
+        {
+          "key": "B",
+          "text": "4.0"
+        },
+        {
+          "key": "C",
+          "text": "7.0"
+        },
+        {
+          "key": "D",
+          "text": "6.8"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The critical pH for enamel demineralization is about 5.5.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T077",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Early smooth surface caries appears clinically as",
+      "options": [
+        {
+          "key": "A",
+          "text": "White chalky spot"
+        },
+        {
+          "key": "B",
+          "text": "Brown stain"
+        },
+        {
+          "key": "C",
+          "text": "Deep cavity"
+        },
+        {
+          "key": "D",
+          "text": "Rough pit"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Early smooth surface caries appears as a white, chalky spot (subsurface demineralization).",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T078",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Arrested enamel caries appears as",
+      "options": [
+        {
+          "key": "A",
+          "text": "Brown spot"
+        },
+        {
+          "key": "B",
+          "text": "White spot"
+        },
+        {
+          "key": "C",
+          "text": "Black hole"
+        },
+        {
+          "key": "D",
+          "text": "Yellow line"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Arrested enamel caries becomes a brown, hard spot as it picks up stain and remineralizes.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T079",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "The cone of enamel caries has its base toward",
+      "options": [
+        {
+          "key": "A",
+          "text": "Enamel surface"
+        },
+        {
+          "key": "B",
+          "text": "DEJ"
+        },
+        {
+          "key": "C",
+          "text": "Pulp"
+        },
+        {
+          "key": "D",
+          "text": "Dentine surface"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Smooth surface enamel caries forms a cone with its base at the enamel surface and its apex towards the DEJ.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T080",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "In dentin caries, the cone base is toward",
+      "options": [
+        {
+          "key": "A",
+          "text": "DEJ"
+        },
+        {
+          "key": "B",
+          "text": "Enamel"
+        },
+        {
+          "key": "C",
+          "text": "Pulp surface"
+        },
+        {
+          "key": "D",
+          "text": "Cementum"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In dentin, the caries cone has its base at the DEJ and its apex towards the pulp.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T081",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "The first histological zone of enamel caries is",
+      "options": [
+        {
+          "key": "A",
+          "text": "Translucent zone"
+        },
+        {
+          "key": "B",
+          "text": "Dark zone"
+        },
+        {
+          "key": "C",
+          "text": "Body of lesion"
+        },
+        {
+          "key": "D",
+          "text": "Surface zone"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The translucent zone is the first, deepest zone of enamel caries (the advancing front).",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T082",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "The surface zone of enamel remains intact because",
+      "options": [
+        {
+          "key": "A",
+          "text": "Reprecipitation of minerals"
+        },
+        {
+          "key": "B",
+          "text": "Acid accumulation"
+        },
+        {
+          "key": "C",
+          "text": "Collagen degradation"
+        },
+        {
+          "key": "D",
+          "text": "None"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The surface zone stays relatively intact because minerals reprecipitate there from saliva and plaque.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T083",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Dead tracts in dentin indicate",
+      "options": [
+        {
+          "key": "A",
+          "text": "Death of odontoblasts"
+        },
+        {
+          "key": "B",
+          "text": "Bacterial invasion"
+        },
+        {
+          "key": "C",
+          "text": "Mineralization"
+        },
+        {
+          "key": "D",
+          "text": "Caries arrest"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Dead tracts are dentinal tubules left empty after the odontoblast processes die.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T084",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Liquefaction foci are",
+      "options": [
+        {
+          "key": "A",
+          "text": "Coalesced distended dentinal tubules"
+        },
+        {
+          "key": "B",
+          "text": "Crystals of calcium"
+        },
+        {
+          "key": "C",
+          "text": "Areas of sclerotic dentine"
+        },
+        {
+          "key": "D",
+          "text": "Enamel prisms"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Liquefaction foci are areas where distended dentinal tubules coalesce as the matrix is destroyed.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T085",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Transverse clefts form",
+      "options": [
+        {
+          "key": "A",
+          "text": "At right angles to tubules"
+        },
+        {
+          "key": "B",
+          "text": "Parallel to enamel"
+        },
+        {
+          "key": "C",
+          "text": "In cementum"
+        },
+        {
+          "key": "D",
+          "text": "In pulp tissue"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Transverse clefts form at right angles to the dentinal tubules in advanced dentin caries.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T086",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "Sclerotic dentin acts as",
+      "options": [
+        {
+          "key": "A",
+          "text": "Defensive barrier"
+        },
+        {
+          "key": "B",
+          "text": "Necrotic area"
+        },
+        {
+          "key": "C",
+          "text": "Caries progression path"
+        },
+        {
+          "key": "D",
+          "text": "None"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Sclerotic dentin is a defensive barrier: blocked tubules slow down the spread of caries.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T087",
+      "course_id": "op1",
+      "chapter": "Dental caries",
+      "lecture": "",
+      "category": "chapter",
+      "exam_label": null,
+      "stem": "The zone of reactionary dentin indicates",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pulpal defense response"
+        },
+        {
+          "key": "B",
+          "text": "Early infection"
+        },
+        {
+          "key": "C",
+          "text": "Mineral loss"
+        },
+        {
+          "key": "D",
+          "text": "Enamel collapse"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Reactionary (tertiary) dentin is a pulpal defense response laid down beneath the lesion.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "typed",
+      "images": []
+    },
+    {
+      "id": "OP1-T088",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "If a chronic path of drainage (sinus tract) is established, a periapical abscess becomes asymptomatic.",
+      "options": [
+        {
+          "key": "A",
+          "text": "True"
+        },
+        {
+          "key": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Once a sinus tract drains the pus, pressure on the periapical tissues drops, so the abscess becomes asymptomatic (a chronic, draining abscess).",
+      "answer_status": "verified",
+      "times_seen": 4,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T089",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Galvanic shock occurs when two different metallic fillings with different electromotive potential (e.g. gold versus amalgam) placed in opposing arches come in contact, with the saliva acting as a fluid conductor.",
+      "options": [
+        {
+          "key": "A",
+          "text": "True"
+        },
+        {
+          "key": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Galvanic shock: two dissimilar metal restorations (e.g. gold and amalgam) in opposing teeth form a battery when they touch, with saliva as the electrolyte, giving a sharp electrical pain.",
+      "answer_status": "verified",
+      "times_seen": 2,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T090",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Histologically, the inflammatory infiltrate seen in periapical granulomas is made up of plasma cells, lymphocytes, neutrophils and rare eosinophils. Foam cells are never seen histologically within periapical granulomas.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Both statements are correct"
+        },
+        {
+          "key": "B",
+          "text": "Both statements are incorrect"
+        },
+        {
+          "key": "C",
+          "text": "The first statement is correct while the second is incorrect"
+        },
+        {
+          "key": "D",
+          "text": "The first statement is incorrect while the second is correct"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The first statement is right: the infiltrate is plasma cells, lymphocytes, neutrophils and occasional eosinophils. The second is wrong: foam cells (lipid-laden macrophages) ARE seen in periapical granulomas, along with cholesterol clefts and giant cells.",
+      "answer_status": "verified",
+      "times_seen": 2,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T091",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "A 35-year-old female complains of pain in her lower first molar, recently restored with amalgam. The pain is precipitated by heat or cold stimuli and disappears immediately after removal of the stimulus. Clinically there is a large occluso-mesial amalgam filling; radiographically it is deep and close to the pulp, and the periapical area is free of pathosis. Based on these findings, the condition most likely represents:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Chronic pulpitis"
+        },
+        {
+          "key": "B",
+          "text": "Pulp hyperemia"
+        },
+        {
+          "key": "C",
+          "text": "Acute pulpitis"
+        },
+        {
+          "key": "D",
+          "text": "Chronic hyperplastic pulpitis"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Pain triggered by hot or cold that stops as soon as the stimulus is removed, in a tooth with a deep restoration and a healthy periapex, is pulp hyperemia (focal reversible pulpitis). Pain that lingers would be acute pulpitis.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T092",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "A 35-year-old female complains of pain in her lower first molar, recently restored with amalgam. The pain is precipitated by heat or cold stimuli and disappears immediately after removal of the stimulus. Clinically there is a large occluso-mesial amalgam filling; radiographically it is deep and close to the pulp, and the periapical area is free of pathosis. To confirm the diagnosis, electrical pulp testing should reveal:",
+      "options": [
+        {
+          "key": "A",
+          "text": "A higher level of response than the adjacent teeth"
+        },
+        {
+          "key": "B",
+          "text": "A lower level of response than the adjacent teeth"
+        },
+        {
+          "key": "C",
+          "text": "A similar level of response compared to the adjacent teeth"
+        },
+        {
+          "key": "D",
+          "text": "A lack of response"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A hyperemic (inflamed but vital) pulp is hypersensitive, so it responds to electric pulp testing at a LOWER current than the adjacent normal teeth.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T093",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "A 35-year-old female complains of pain in her lower first molar, recently restored with amalgam. The pain is precipitated by heat or cold stimuli and disappears immediately after removal of the stimulus. Clinically there is a large occluso-mesial amalgam filling; radiographically it is deep and close to the pulp, and the periapical area is free of pathosis. If histopathologic examination of the pulpal tissue is conducted, it should reveal:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dilated blood vessels with increased blood supply within the involved pulpal tissue"
+        },
+        {
+          "key": "B",
+          "text": "Dilated blood vessels with increased blood supply and an inflammatory infiltrate composed predominantly of plasma cells and lymphocytes"
+        },
+        {
+          "key": "C",
+          "text": "Dilated blood vessels with increased blood supply and an inflammatory infiltrate composed predominantly of neutrophils"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Pulp hyperemia histologically shows only dilated, engorged blood vessels (with edema). There is no significant inflammatory cell infiltrate yet; plasma cells and lymphocytes mean chronic pulpitis, neutrophils mean acute pulpitis.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T094",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Electric pulp testing of a tooth involved with chronic pulpitis reveals:",
+      "options": [
+        {
+          "key": "A",
+          "text": "The involved tooth will respond to a higher level than a normal tooth"
+        },
+        {
+          "key": "B",
+          "text": "The involved tooth will respond to a lower level than a normal tooth"
+        },
+        {
+          "key": "C",
+          "text": "The involved tooth fails to respond to pulp testing"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In chronic pulpitis the nerve fibres degenerate, so the tooth needs a HIGHER current than a normal tooth to respond. Acute pulpitis responds at a lower level.",
+      "answer_status": "verified",
+      "times_seen": 2,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T095",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Periapical granuloma can be located:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Laterally along the root surface"
+        },
+        {
+          "key": "B",
+          "text": "Periapically"
+        },
+        {
+          "key": "C",
+          "text": "Interradicularly"
+        },
+        {
+          "key": "D",
+          "text": "Any of the above"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A periapical granuloma forms wherever the infected root canal opens: at the apex, laterally along the root (lateral canal) or between the roots (furcation canals).",
+      "answer_status": "verified",
+      "times_seen": 2,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T096",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "The prerequisites for chronic hyperplastic pulpitis to occur are:",
+      "options": [
+        {
+          "key": "A",
+          "text": "A non-vital tooth with a large carious exposure, in an old patient with a well formed root and narrow apical foramen"
+        },
+        {
+          "key": "B",
+          "text": "A vital tooth with a large carious exposure, in a young patient with incomplete root formation and a wide apical foramen"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Chronic hyperplastic pulpitis (pulp polyp) needs a VITAL pulp with a good blood supply: a young patient, an open (wide) apex and a large carious exposure that lets the granulation tissue grow out.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T097",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "In chronic pulpitis:",
+      "options": [
+        {
+          "key": "A",
+          "text": "The involved pulpal tissue shows an inflammatory infiltrate composed predominantly of plasma cells and lymphocytes"
+        },
+        {
+          "key": "B",
+          "text": "The involved pulpal tissue shows an inflammatory infiltrate composed predominantly of neutrophils"
+        },
+        {
+          "key": "C",
+          "text": "The involved pulpal tissue only shows dilated blood vessels"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Chronic pulpitis shows granulation tissue with a chronic infiltrate of plasma cells and lymphocytes. Neutrophils are typical of acute pulpitis; dilated vessels alone are hyperemia.",
+      "answer_status": "verified",
+      "times_seen": 5,
+      "source_pages": "bank,mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T098",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Maxillary sinusitis can present clinically as upper posterior teeth pain.",
+      "options": [
+        {
+          "key": "A",
+          "text": "True"
+        },
+        {
+          "key": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The roots of the upper posterior teeth lie close to the floor of the maxillary sinus, so sinusitis can refer pain to them (several teeth tender to percussion). Always consider it before treating the teeth.",
+      "answer_status": "verified",
+      "times_seen": 8,
+      "source_pages": "bank,mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T099",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "The process of diapedesis which is seen in acute pulpitis allows for the migration of neutrophils through the blood vessel walls.",
+      "options": [
+        {
+          "key": "A",
+          "text": "True"
+        },
+        {
+          "key": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Diapedesis is the passage of white cells (neutrophils in acute inflammation) through intact blood vessel walls into the tissue. It is a key event in acute pulpitis.",
+      "answer_status": "verified",
+      "times_seen": 2,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T100",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Bacteria can reach the pulp through:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dental caries"
+        },
+        {
+          "key": "B",
+          "text": "A fracture within the crown"
+        },
+        {
+          "key": "C",
+          "text": "Anachoresis"
+        },
+        {
+          "key": "D",
+          "text": "(a & b) only"
+        },
+        {
+          "key": "E",
+          "text": "All of the above"
+        }
+      ],
+      "answer": "E",
+      "explanation": "Bacteria reach the pulp through caries (most common), through a fracture or crack in the crown, and via the blood stream to an already inflamed pulp (anachoresis). All three are correct.",
+      "answer_status": "verified",
+      "times_seen": 2,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T101",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "All of the following clinical signs and symptoms are seen in cavernous sinus thrombosis except:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ophthalmoplegia"
+        },
+        {
+          "key": "B",
+          "text": "Ptosis"
+        },
+        {
+          "key": "C",
+          "text": "Exophthalmos"
+        },
+        {
+          "key": "D",
+          "text": "Loss of corneal reflexes"
+        },
+        {
+          "key": "E",
+          "text": "Fever, chills"
+        },
+        {
+          "key": "F",
+          "text": "Pin point pupils (constricted pupils)"
+        }
+      ],
+      "answer": "F",
+      "explanation": "Cavernous sinus thrombosis causes exophthalmos, ptosis, ophthalmoplegia, loss of corneal reflexes, fever and DILATED pupils (cranial nerve III involvement). Pin-point (constricted) pupils are not a feature.",
+      "answer_status": "verified",
+      "times_seen": 5,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T102",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Aerodontalgia is the tooth pain caused by a drop in atmospheric pressure as a result of flying at high altitudes. A prerequisite for aerodontalgia is that the tooth or teeth involved most probably has recently received a deep permanent restoration, e.g. a deep amalgam filling.",
+      "options": [
+        {
+          "key": "A",
+          "text": "The first statement is correct while the second statement is incorrect"
+        },
+        {
+          "key": "B",
+          "text": "The second statement is correct while the first statement is incorrect"
+        },
+        {
+          "key": "C",
+          "text": "Both statements are correct"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Both statements are correct: aerodontalgia is tooth pain from a drop in atmospheric pressure at altitude, and it usually affects a tooth with a recent deep restoration (an already irritated pulp).",
+      "answer_status": "verified",
+      "times_seen": 4,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T103",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Infection from the dangerous area of the face can spread to the cavernous sinus via:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Emissary veins in a retrograde fashion"
+        },
+        {
+          "key": "B",
+          "text": "Tissue planes"
+        },
+        {
+          "key": "C",
+          "text": "Cranial nerves"
+        },
+        {
+          "key": "D",
+          "text": "All of the above"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The facial veins of the 'dangerous area' (upper lip, nose) have no valves, so infection can travel backwards (retrograde) through the emissary/ophthalmic veins into the cavernous sinus.",
+      "answer_status": "verified",
+      "times_seen": 4,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T104",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "The intraoral opening of a draining sinus tract is termed:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Phoenix abscess"
+        },
+        {
+          "key": "B",
+          "text": "Parulis"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The parulis (gum boil) is the mass of inflamed granulation tissue at the intraoral opening of a sinus tract. A Phoenix abscess is an acute flare-up of a chronic periapical lesion.",
+      "answer_status": "verified",
+      "times_seen": 3,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T105",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Radiographically, a periapical abscess presents as:",
+      "options": [
+        {
+          "key": "A",
+          "text": "A well defined radiolucency"
+        },
+        {
+          "key": "B",
+          "text": "An ill defined radiolucency"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An acute periapical abscess spreads through bone quickly with no time for a sclerotic border, so it appears as an ILL-defined radiolucency (often only a widened PDL early on). A granuloma or cyst is well defined.",
+      "answer_status": "verified",
+      "times_seen": 4,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T106",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "A patient presents with severe lancinating pain involving his upper second premolar. The pain increases while lying down and keeps him awake. Hot and cold drinks precipitate the pain, and the tooth remains painful after removal of the stimulus. This patient is most likely suffering from:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Chronic pulpitis"
+        },
+        {
+          "key": "B",
+          "text": "Pulp hyperaemia"
+        },
+        {
+          "key": "C",
+          "text": "Chronic hyperplastic pulpitis"
+        },
+        {
+          "key": "D",
+          "text": "Acute pulpitis"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Severe, lancinating pain that wakes the patient, worsens on lying down and LINGERS after the hot/cold stimulus is removed is acute pulpitis (irreversible).",
+      "answer_status": "verified",
+      "times_seen": 2,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T107",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Histopathologically, focal reversible pulpitis exhibits an intact odontoblastic layer, dilated blood vessels and neutrophils.",
+      "options": [
+        {
+          "key": "A",
+          "text": "True"
+        },
+        {
+          "key": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Focal reversible pulpitis shows dilated vessels, edema and an intact odontoblastic layer but NO neutrophil infiltrate. Neutrophils mean acute pulpitis, so the statement is false.",
+      "answer_status": "verified",
+      "times_seen": 7,
+      "source_pages": "bank,mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T108",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Chronic ulcerative pulpitis is a misnomer, owing to the fact that:",
+      "options": [
+        {
+          "key": "A",
+          "text": "An ulcer is covered by epithelium"
+        },
+        {
+          "key": "B",
+          "text": "An ulcer is defined as a discontinuity of the connective tissue"
+        },
+        {
+          "key": "C",
+          "text": "An ulcer is defined as a discontinuity of the epithelium"
+        }
+      ],
+      "answer": "C",
+      "explanation": "An ulcer is a break in the EPITHELIUM. The pulp is connective tissue with no epithelial covering, so 'ulcerative' pulpitis is a misnomer.",
+      "answer_status": "verified",
+      "times_seen": 4,
+      "source_pages": "bank,mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T109",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Pulpitis induced by the dentist is termed:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Anachoretic pulpitis"
+        },
+        {
+          "key": "B",
+          "text": "Iatrogenic pulpitis 'Odontoiatrogenic pulpitis'"
+        },
+        {
+          "key": "C",
+          "text": "Chronic hyperplastic pulpitis"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Pulpitis caused by the dentist (overheating, deep cavity preparation, chemicals) is iatrogenic, or odontoiatrogenic, pulpitis.",
+      "answer_status": "verified",
+      "times_seen": 4,
+      "source_pages": "bank,mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T110",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "The vast majority of dental abscesses perforate the:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Lingual cortex"
+        },
+        {
+          "key": "B",
+          "text": "Buccal cortex"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The buccal cortical plate over most teeth is thinner than the lingual, so most dental abscesses perforate buccally. The lower molars are the main exception (thin lingual plate).",
+      "answer_status": "verified",
+      "times_seen": 2,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T111",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "The majority of cases of Ludwig's angina develop from the spread of an acute infection from the lower molar teeth as a direct result of:",
+      "options": [
+        {
+          "key": "A",
+          "text": "The fact that the lingual cortex in this area is thinner than the buccal cortex"
+        },
+        {
+          "key": "B",
+          "text": "The fact that the lingual cortex in this area is thicker than the buccal cortex"
+        },
+        {
+          "key": "C",
+          "text": "The fact that the root apices of these teeth are located below the attachment of the mylohyoid muscle"
+        },
+        {
+          "key": "D",
+          "text": "The fact that the root apices of these teeth are located above the attachment of the mylohyoid muscle"
+        },
+        {
+          "key": "E",
+          "text": "A & C"
+        },
+        {
+          "key": "F",
+          "text": "A & D"
+        },
+        {
+          "key": "G",
+          "text": "B & C"
+        },
+        {
+          "key": "H",
+          "text": "B & D"
+        }
+      ],
+      "answer": "E",
+      "explanation": "Ludwig's angina mostly starts from lower molars because (A) the lingual cortex there is thinner than the buccal, and (C) the root apices lie BELOW the mylohyoid attachment, so pus enters the submandibular space.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T112",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "In acute pulpitis, the tooth responds to electric pulp testing at lower levels of current.",
+      "options": [
+        {
+          "key": "A",
+          "text": "True"
+        },
+        {
+          "key": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "A",
+      "explanation": "An acutely inflamed pulp is hyper-reactive, so it responds to electric pulp testing at LOWER current levels than a normal tooth.",
+      "answer_status": "verified",
+      "times_seen": 4,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T113",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "When the tooth feels slightly elevated in its socket, this feature is attributed to:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Acute pulpitis"
+        },
+        {
+          "key": "B",
+          "text": "Periapical granuloma"
+        },
+        {
+          "key": "C",
+          "text": "Chronic pulpitis"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In a periapical granuloma the inflamed tissue at the apex pushes the tooth slightly out of the socket, so the patient feels it is 'high' and tender on biting.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T114",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Bacteria can reach the pulp via all of the following except:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Periapical tissues"
+        },
+        {
+          "key": "B",
+          "text": "Dental caries"
+        },
+        {
+          "key": "C",
+          "text": "A fracture within the crown"
+        },
+        {
+          "key": "D",
+          "text": "Nerve fibers"
+        },
+        {
+          "key": "E",
+          "text": "Anachoresis"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Bacteria reach the pulp through caries, fractures, the periapical tissues (retrograde via the apex or lateral canals) and the blood (anachoresis). They do NOT travel along nerve fibres.",
+      "answer_status": "verified",
+      "times_seen": 2,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T115",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "The pulp polyp is made up of a granulation tissue which is covered by epithelium. The epithelium is derived from the rests of Malassez.",
+      "options": [
+        {
+          "key": "A",
+          "text": "The first statement is incorrect while the second is correct"
+        },
+        {
+          "key": "B",
+          "text": "The first statement is correct while the second is incorrect"
+        },
+        {
+          "key": "C",
+          "text": "Both statements are incorrect"
+        },
+        {
+          "key": "D",
+          "text": "Both statements are correct"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first statement is correct: a pulp polyp is granulation tissue that may be covered by stratified squamous epithelium. The second is wrong: the epithelium comes from grafted oral epithelium (desquamated cells from the buccal mucosa/gingiva), not the rests of Malassez.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T116",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Severe, lancinating pain that does not disappear after removal of the stimulus is one of the features of:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pulp polyp"
+        },
+        {
+          "key": "B",
+          "text": "Periapical granuloma"
+        },
+        {
+          "key": "C",
+          "text": "Chronic ulcerative pulpitis"
+        },
+        {
+          "key": "D",
+          "text": "Acute pulpitis"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Severe, lancinating pain that persists after the stimulus is removed is the hallmark of acute (irreversible) pulpitis.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T117",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "The tooth responds to electric pulp testing at a higher level than normal in:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Acute pulpitis"
+        },
+        {
+          "key": "B",
+          "text": "Chronic pulpitis"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The degenerated nerve fibres in chronic pulpitis need a HIGHER current to respond during electric pulp testing.",
+      "answer_status": "verified",
+      "times_seen": 2,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T118",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "In pulp hyperemia, the tooth involved shows:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Histologically, dilated blood vessels which are engorged with plasma cells and lymphocytes within the involved pulpal tissue"
+        },
+        {
+          "key": "B",
+          "text": "Clinically, pain with hot and cold stimuli which remains after the stimulus is removed"
+        },
+        {
+          "key": "C",
+          "text": "Clinically, a periapical swelling"
+        },
+        {
+          "key": "D",
+          "text": "Histologically, dilated blood vessels which are engorged with blood within the involved pulpal tissue"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Pulp hyperemia histologically shows dilated blood vessels engorged with BLOOD. Pain that lingers after the stimulus is acute pulpitis, and a periapical swelling is a periapical lesion.",
+      "answer_status": "confirmed",
+      "times_seen": 3,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T119",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "The treatment of a tooth with acute pulpitis is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Filling without a root canal treatment"
+        },
+        {
+          "key": "B",
+          "text": "Performing a root canal treatment or extraction"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Acute pulpitis is irreversible, so the inflamed pulp must be removed: root canal treatment, or extraction if the tooth cannot be restored. A simple filling is not enough.",
+      "answer_status": "confirmed",
+      "times_seen": 2,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T120",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Chronic hyperplastic pulpitis is commonly referred to as a 'pulp polyp'. The use of this term should be discontinued as it is considered to be a misnomer, owing to the fact that:",
+      "options": [
+        {
+          "key": "A",
+          "text": "A polyp is a swelling of epithelial origin"
+        },
+        {
+          "key": "B",
+          "text": "A polyp is a swelling of connective tissue origin"
+        },
+        {
+          "key": "C",
+          "text": "A polyp is an acute condition"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A true polyp is a swelling of EPITHELIAL origin, while the pulp polyp is a mass of connective (granulation) tissue, so the term is a misnomer.",
+      "answer_status": "corrected",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T121",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Ludwig's angina commonly results from spread of infection from:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Lower anterior teeth"
+        },
+        {
+          "key": "B",
+          "text": "Upper posterior teeth"
+        },
+        {
+          "key": "C",
+          "text": "Lower posterior teeth"
+        },
+        {
+          "key": "D",
+          "text": "Upper anterior teeth"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Ludwig's angina usually follows infection of the LOWER POSTERIOR (molar) teeth: their apices lie below the mylohyoid and the lingual plate is thin, so pus spreads into the submandibular space.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T122",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "An eight-year-old boy presented to your dental office for treatment of a broken down lower right molar. Clinical examination revealed a badly broken down molar with a pink mass protruding from its occlusal surface. The diagnosis of this lesion is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Acute pulpitis"
+        },
+        {
+          "key": "B",
+          "text": "Chronic ulcerative pulpitis"
+        },
+        {
+          "key": "C",
+          "text": "Chronic hyperplastic pulpitis"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A young patient, a badly broken-down molar and a pink mass growing out of the cavity is chronic hyperplastic pulpitis (pulp polyp).",
+      "answer_status": "verified",
+      "times_seen": 3,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T123",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "An eight-year-old boy presented to your dental office for treatment of a broken down lower right molar. Clinical examination revealed a badly broken down molar with a pink mass protruding from its occlusal surface. Based on your diagnosis, histopathologically this lesion is composed of:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Granulation tissue exhibiting an inflammatory infiltrate composed of plasma cells and lymphocytes"
+        },
+        {
+          "key": "B",
+          "text": "Granulation tissue exhibiting an inflammatory infiltrate of neutrophils"
+        },
+        {
+          "key": "C",
+          "text": "Granulation tissue covered by stratified squamous epithelium"
+        },
+        {
+          "key": "D",
+          "text": "a and c"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A pulp polyp is granulation tissue with plasma cells and lymphocytes (chronic inflammation) and it may be covered by stratified squamous epithelium, so 'a and c' is the answer.",
+      "answer_status": "corrected",
+      "times_seen": 3,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T124",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "An eight-year-old boy presented to your dental office for treatment of a broken down lower right molar. Clinical examination revealed a badly broken down molar with a pink mass protruding from its occlusal surface. A periapical radiograph reveals the badly decayed molar with a wide carious exposure. The diagnosis of this lesion is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Chronic hyperplastic pulpitis"
+        },
+        {
+          "key": "B",
+          "text": "Chronic ulcerative pulpitis"
+        },
+        {
+          "key": "C",
+          "text": "Acute pulpitis"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A young patient, a pink mass protruding from a wide carious exposure in a molar is chronic hyperplastic pulpitis (pulp polyp). The ulcerative type has no protruding mass.",
+      "answer_status": "confirmed",
+      "times_seen": 3,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T125",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Which of the following is the most definitive in distinguishing a periapical granuloma from a periapical cyst?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Radiographic examination"
+        },
+        {
+          "key": "B",
+          "text": "Histopathological examination"
+        },
+        {
+          "key": "C",
+          "text": "Clinical examination"
+        },
+        {
+          "key": "D",
+          "text": "Conducting a vitality test"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A granuloma and a cyst look similar radiographically and clinically (both on non-vital teeth). Only histopathology can tell them apart: an epithelium-lined cavity means a cyst.",
+      "answer_status": "corrected",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T126",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "The phenomenon in which bacteria circulating in the blood tend to localize in an inflamed area is known as:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Diapedesis"
+        },
+        {
+          "key": "B",
+          "text": "Anachoresis"
+        },
+        {
+          "key": "C",
+          "text": "Iatrogenic pulpitis"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Anachoresis is the localization of blood-borne bacteria in an inflamed area (such as an inflamed pulp). Diapedesis is the movement of white cells through vessel walls.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T127",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Toothache occurring in personnel of air crews when flying at high altitudes or entering a low pressure chamber is termed:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Aerodontalgia"
+        },
+        {
+          "key": "B",
+          "text": "Anachoresis"
+        },
+        {
+          "key": "C",
+          "text": "Regional odontodysplasia"
+        },
+        {
+          "key": "D",
+          "text": "Iatrogenic pulpitis"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Aerodontalgia is toothache caused by reduced atmospheric pressure (flying, pressure chambers), usually in teeth with an already inflamed pulp or recent deep restorations.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T128",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Infection from the dangerous area of the face can spread to the cavernous sinus via:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Emissary veins in a retrograde fashion"
+        },
+        {
+          "key": "B",
+          "text": "Cranial nerves"
+        },
+        {
+          "key": "C",
+          "text": "Frontal sinus"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The valveless veins of the dangerous area of the face allow retrograde spread of infection through the emissary veins into the cavernous sinus.",
+      "answer_status": "verified",
+      "times_seen": 4,
+      "source_pages": "bank",
+      "images": []
+    },
+    {
+      "id": "OP1-T129",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "quiz_midterm",
+      "exam_label": null,
+      "stem": "A 15-year-old patient presented with a right mandibular swelling of the premolar/molar area. Radiographic examination revealed periosteal duplication and 'onion-skinning'. A large periapical radiolucency was also noted on the lower right second molar. The most probable diagnosis is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Alveolar osteitis"
+        },
+        {
+          "key": "B",
+          "text": "Focal sclerosing osteomyelitis"
+        },
+        {
+          "key": "C",
+          "text": "Osteomyelitis with proliferative periostitis"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A young patient with a mandibular swelling, periosteal 'onion-skin' layering and a periapical infection from a molar has osteomyelitis with proliferative periostitis (Garré).",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T130",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "quiz_midterm",
+      "exam_label": null,
+      "stem": "All of the following are features of chronic sclerosing osteomyelitis except:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Histologically, bone sclerosing and remodeling is seen"
+        },
+        {
+          "key": "B",
+          "text": "Radiographically, decreased radiodensity is seen at the involved site"
+        },
+        {
+          "key": "C",
+          "text": "Asymptomatic swelling that primarily occurs in the mandible"
+        },
+        {
+          "key": "D",
+          "text": "Histologically, it exhibits few marrow spaces coupled with a sparse or no inflammatory infiltrate"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Chronic sclerosing osteomyelitis INCREASES radiodensity (sclerotic bone). The other options describe it correctly.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T131",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "quiz_midterm",
+      "exam_label": null,
+      "stem": "Periapical cyst is considered to be the most common developmental cyst. It is associated with a non-vital tooth.",
+      "options": [
+        {
+          "key": "A",
+          "text": "The first statement is false while the second one is true"
+        },
+        {
+          "key": "B",
+          "text": "The first statement is true while the second one is false"
+        },
+        {
+          "key": "C",
+          "text": "Both statements are true"
+        },
+        {
+          "key": "D",
+          "text": "Both statements are false"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first statement is false: the periapical cyst is the most common odontogenic cyst but it is INFLAMMATORY, not developmental (the dentigerous cyst is the most common developmental one). The second is true: it always arises on a non-vital tooth.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T132",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "quiz_midterm",
+      "exam_label": null,
+      "stem": "The presence of mucous cells within the epithelial cyst lining is attributed to a process termed:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Prosoplasia"
+        },
+        {
+          "key": "B",
+          "text": "Metaplasia"
+        },
+        {
+          "key": "C",
+          "text": "Dysplasia"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Prosoplasia is the ability of odontogenic epithelium to show specialized differentiation, e.g. mucous cells or ciliated cells in a cyst lining.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T133",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "quiz_midterm",
+      "exam_label": null,
+      "stem": "All of the following cysts are considered to be developmental, except:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dermoid cyst"
+        },
+        {
+          "key": "B",
+          "text": "Thyroglossal tract cyst"
+        },
+        {
+          "key": "C",
+          "text": "Periapical cyst"
+        },
+        {
+          "key": "D",
+          "text": "Branchial cleft cyst"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The periapical cyst is an INFLAMMATORY cyst (from the rests of Malassez stimulated by a non-vital pulp). Dermoid, thyroglossal tract and branchial cleft cysts are developmental.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T134",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "quiz_midterm",
+      "exam_label": null,
+      "stem": "Russel bodies are mainly made of:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fatty acids"
+        },
+        {
+          "key": "B",
+          "text": "Degenerated RBCs"
+        },
+        {
+          "key": "C",
+          "text": "Immunoglobulins"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Russel bodies are derived from degenerated plasma cells and are globules of immunoglobulin (gamma globulin).",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T135",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "quiz_midterm",
+      "exam_label": null,
+      "stem": "The most commonly occurring cyst in the oral region is the:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Globulomaxillary cyst"
+        },
+        {
+          "key": "B",
+          "text": "Odontogenic keratocyst"
+        },
+        {
+          "key": "C",
+          "text": "Radicular cyst"
+        },
+        {
+          "key": "D",
+          "text": "Thyroglossal tract cyst"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The radicular (periapical) cyst is the most common cyst of the jaws and oral region.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T136",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "quiz_midterm",
+      "exam_label": null,
+      "stem": "Which of the following cysts histologically exhibits a stratified squamous epithelium of varying thickness which may contain goblet cells and cilia?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Odontogenic keratocyst"
+        },
+        {
+          "key": "B",
+          "text": "Periapical cyst"
+        },
+        {
+          "key": "C",
+          "text": "Glandular odontogenic cyst"
+        },
+        {
+          "key": "D",
+          "text": "Calcifying odontogenic cyst"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The periapical cyst is lined by stratified squamous epithelium of varying thickness, which may show prosoplasia (mucous/goblet cells and cilia).",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T137",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "quiz_midterm",
+      "exam_label": null,
+      "stem": "A thirteen-year-old patient presented to your clinic complaining of a foul taste. Examination revealed a swelling on the buccal aspect of the first permanent molar. This clinical picture is consistent with:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Buccal bifurcation cyst"
+        },
+        {
+          "key": "B",
+          "text": "Dentigerous cyst"
+        },
+        {
+          "key": "C",
+          "text": "Calcifying odontogenic cyst"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A child (5–13 years) with a buccal swelling, foul taste and a vital first permanent molar is the buccal bifurcation cyst.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T138",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "quiz_midterm",
+      "exam_label": null,
+      "stem": "A thirteen-year-old patient presented to your clinic complaining of a foul taste. Examination revealed a swelling on the buccal aspect of the first permanent molar. The most helpful radiograph to diagnose this case is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Panoramic radiograph"
+        },
+        {
+          "key": "B",
+          "text": "Occlusal radiograph"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An occlusal radiograph best shows the buccal location of the buccal bifurcation cyst.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T139",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "quiz_midterm",
+      "exam_label": null,
+      "stem": "A thirteen-year-old patient presented to your clinic complaining of a foul taste. Examination revealed a swelling on the buccal aspect of the first permanent molar. The treatment of this case is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Enucleation with removal of the involved tooth"
+        },
+        {
+          "key": "B",
+          "text": "Enucleation without removal of the involved tooth"
+        },
+        {
+          "key": "C",
+          "text": "No treatment is required as the case is self limiting"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The buccal bifurcation cyst is treated by enucleation; extracting the involved (vital) tooth is unnecessary.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T140",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "quiz_midterm",
+      "exam_label": null,
+      "stem": "The buccal bifurcation cyst arises as a direct consequence of the presence of:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Exposed cementum"
+        },
+        {
+          "key": "B",
+          "text": "Enamel extension into the bifurcation area"
+        },
+        {
+          "key": "C",
+          "text": "Exposed radicular dentin"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The buccal bifurcation cyst is associated with an enamel extension into the bifurcation area of the mandibular first molar.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T141",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "quiz_midterm",
+      "exam_label": null,
+      "stem": "Which of the following is considered to be the most common odontogenic cyst in the oral region?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Calcifying odontogenic cyst"
+        },
+        {
+          "key": "B",
+          "text": "Radicular cyst"
+        },
+        {
+          "key": "C",
+          "text": "Thyroglossal tract cyst"
+        },
+        {
+          "key": "D",
+          "text": "Odontogenic keratocyst"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The radicular (periapical) cyst is the most common odontogenic cyst.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T142",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "quiz_midterm",
+      "exam_label": null,
+      "stem": "Rushton bodies are seen within:",
+      "options": [
+        {
+          "key": "A",
+          "text": "The cyst wall"
+        },
+        {
+          "key": "B",
+          "text": "The luminal cystic space"
+        },
+        {
+          "key": "C",
+          "text": "The epithelial cystic lining"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Rushton bodies are curved, hyaline bodies found within the EPITHELIAL LINING of odontogenic (especially radicular) cysts. They are of vascular origin.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T143",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "quiz_midterm",
+      "exam_label": null,
+      "stem": "Which of the following odontogenic cysts is most likely to be associated with a non-vital tooth?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Calcifying odontogenic cyst"
+        },
+        {
+          "key": "B",
+          "text": "Odontogenic keratocyst"
+        },
+        {
+          "key": "C",
+          "text": "Periapical cyst"
+        },
+        {
+          "key": "D",
+          "text": "Developmental lateral periodontal cyst"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The periapical cyst always arises from a non-vital tooth. The others are developmental and occur with vital teeth.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T144",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "quiz_midterm",
+      "exam_label": null,
+      "stem": "All of the following are considered to be pseudocysts except:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Traumatic bone cyst"
+        },
+        {
+          "key": "B",
+          "text": "Aneurysmal bone cyst"
+        },
+        {
+          "key": "C",
+          "text": "Branchial cleft cyst"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The branchial cleft cyst is a true (lymphoepithelial) cyst with an epithelial lining. Traumatic and aneurysmal bone cysts have no epithelial lining, so they are pseudocysts.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T145",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "quiz_midterm",
+      "exam_label": null,
+      "stem": "As a general rule of thumb, most of the diagnostic features of developmental non-odontogenic cysts exist within the connective tissue wall rather than the epithelial lining of such cysts.",
+      "options": [
+        {
+          "key": "A",
+          "text": "True"
+        },
+        {
+          "key": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In developmental non-odontogenic cysts, the wall contents often make the diagnosis: nerves and vessels in the nasopalatine duct cyst, skin appendages in the dermoid, thyroid follicles in the thyroglossal cyst, lymphoid tissue in lymphoepithelial cysts.",
+      "answer_status": "corrected",
+      "times_seen": 1,
+      "source_pages": "mid",
+      "images": []
+    },
+    {
+      "id": "OP1-T146",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "quiz_midterm",
+      "exam_label": null,
+      "stem": "A pseudocyst is a cavity lined by epithelium containing fluid or semi-fluid.",
+      "options": [
+        {
+          "key": "A",
+          "text": "True"
+        },
+        {
+          "key": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "B",
+      "explanation": "False. A pseudocyst has NO epithelial lining; a true cyst is the one lined by epithelium.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "mid",
+      "images": []
+    }
+  ]
+}
