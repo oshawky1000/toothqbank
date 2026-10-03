@@ -1,6 +1,8 @@
 // Checks a question file against docs/question-format.md before it is imported.
 // The database checks again when saving; this gives clear messages first.
 
+import { IMAGE_NAME, IMAGE_NAME_HINT } from './images.ts'
+
 export const CATEGORIES = ['past_paper', 'quiz_midterm', 'chapter'] as const
 const ANSWER_STATUSES = ['confirmed', 'verified', 'corrected']
 
@@ -9,6 +11,7 @@ export type QuestionFileQuestion = {
   course_id: string
   chapter: string
   category: (typeof CATEGORIES)[number]
+  images?: string[] | null
 }
 
 export type QuestionFile = {
@@ -104,8 +107,16 @@ export function checkQuestionFile(text: string): CheckResult {
     if (q.source_pages != null && typeof q.source_pages !== 'string' && typeof q.source_pages !== 'number') {
       fail('source_pages', 'must be text.')
     }
-    if (q.images != null && !(Array.isArray(q.images) && q.images.every((img) => typeof img === 'string'))) {
-      fail('images', 'must be a list of file names.')
+    const images = q.images
+    if (images != null) {
+      if (!Array.isArray(images) || !images.every((img) => typeof img === 'string')) {
+        fail('images', 'must be a list of file names.')
+      } else {
+        images.forEach((img: string, i: number) => {
+          if (!IMAGE_NAME.test(img)) fail('images', `"${img}" is not an allowed file name (${IMAGE_NAME_HINT}).`)
+          else if (images.indexOf(img) !== i) fail('images', `"${img}" is listed twice.`)
+        })
+      }
     }
   })
 

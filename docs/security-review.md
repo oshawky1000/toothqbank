@@ -20,6 +20,7 @@ This was tested on your live database and on a test copy (details below). Everyt
 | What | How it is protected |
 |---|---|
 | Question text, options, answers, explanations | Database rules (Row Level Security). The three checks above run on **every** request. |
+| Question images | Stored in a **private** Supabase Storage bucket (`question-images`). Supabase only gives out a link to an image if the person can read a question that uses it (the same three checks). Links stop working after 1 hour. Only admins can upload, replace or delete images. Added after Phase 7, see `0005_question_images.sql`. |
 | Internal fields (answer status, source pages) | Only admins can read them. They are never sent to students. |
 | Student names and phone numbers | Each student can read only their own. Admins can read all. |
 | Admin notes ("Paid InstaPay…") | Admins only. Students cannot see any notes, not even their own. |
@@ -61,15 +62,16 @@ The website also got:
 None of these are emergencies. Each comes with what to do.
 
 1. **Screenshots and photos.** No website can stop a student photographing a question on their screen. Students only ever see questions from courses they paid for.
-2. **A tech-savvy student who has access** could save the questions of *their own unlocked courses* using browser developer tools. The copy protection slows down normal users only.
-3. **Sharing an account.** The one-device rule blocks this for normal users. A very technical student could copy the hidden device ID to a friend's phone together with the password.
+2. **A student who has access can pass on an image link**, and it works for anyone until it expires (at most 1 hour). They could also just screenshot it, so this adds little risk.
+3. **A tech-savvy student who has access** could save the questions of *their own unlocked courses* using browser developer tools. The copy protection slows down normal users only.
+4. **Sharing an account.** The one-device rule blocks this for normal users. A very technical student could copy the hidden device ID to a friend's phone together with the password.
    - **What to do:** if you suspect sharing, use **Reset password** and **Reset device**, then send the new password only to the real student.
-4. **Reset device: whoever opens the site first wins.** After you press Reset device, the next phone that opens ToothQBank becomes the bound device, even the old phone.
+5. **Reset device: whoever opens the site first wins.** After you press Reset device, the next phone that opens ToothQBank becomes the bound device, even the old phone.
    - **What to do:** tell the student to log in on the new phone straight after the reset.
-5. **A new password does not log out a phone that is already logged in.** Combine it with Reset device if you need to lock someone out (or use **Revoke**, which works immediately).
-6. **Anyone can create a pending account.** It sees no questions. Reject accounts you don't recognise.
-7. **A student could send many error reports.** It is only a nuisance. Revoke the account if it happens.
-8. **Admin accounts can do everything** and are exempt from the device limit.
+6. **A new password does not log out a phone that is already logged in.** Combine it with Reset device if you need to lock someone out (or use **Revoke**, which works immediately).
+7. **Anyone can create a pending account.** It sees no questions. Reject accounts you don't recognise.
+8. **A student could send many error reports.** It is only a nuisance. Revoke the account if it happens.
+9. **Admin accounts can do everything** and are exempt from the device limit.
    - **What to do:** keep admin accounts to the two people who need them.
    - Use a long password that you use nowhere else.
    - Remove admin rights from anyone who leaves (`supabase/snippets/make-admin.sql` has the reverse command).
@@ -81,6 +83,7 @@ None of these are emergencies. Each comes with what to do.
   - **Questions** are safe: they can always be re-imported from the JSON files.
   - **Student accounts, unlocks and notes** would be lost if the database were lost. Keep your own record of who paid for what (for example in a spreadsheet). Notes in the dashboard are not a backup.
 - **"Leaked password protection"** (checking passwords against lists of stolen passwords) is a paid Supabase feature. The website already requires at least 8 characters.
+- **Images and the free plan.** The free plan includes 1 GB of file storage and limited monthly download traffic. Images are shrunk before upload to stay well inside this. Once several courses have images, check **Usage** in Supabase now and then.
 
 ## Supabase warnings you will see (and why they are fine)
 

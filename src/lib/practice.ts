@@ -33,6 +33,7 @@ export type Question = {
   answer: string
   explanation: string
   times_seen: number
+  images: string[]
 }
 
 export type Item = {
@@ -148,7 +149,7 @@ export async function loadSession(sessionId: string): Promise<LoadedSession | nu
   for (let i = 0; i < ids.length; i += 100) {
     const { data, error } = await supabase
       .from('questions')
-      .select('id, chapter_id, category, stem, options, answer, explanation, times_seen')
+      .select('id, chapter_id, category, stem, options, answer, explanation, times_seen, images')
       .in('id', ids.slice(i, i + 100))
     if (error) throw error
     for (const q of (data ?? []) as Question[]) questions.set(q.id, q)

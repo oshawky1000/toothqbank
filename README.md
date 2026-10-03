@@ -8,7 +8,7 @@ MCQ question bank for dentistry students. See `CLAUDE.md` for the full project b
 - `public/`: browser tab icon and phone home-screen icon
 - `data/`: question files (JSON), format in `docs/question-format.md`
 - `functions/`: Cloudflare Pages Functions (server code). `functions/api/admin/reset-password.ts` lets admins reset a student's password
-- `supabase/migrations/`: database changes (tables, security rules, seed data), applied in order in the Supabase SQL Editor
+- `supabase/migrations/`: database changes (tables, security rules, seed data, the private `question-images` storage bucket), applied in order in the Supabase SQL Editor
 - `docs/brand/tooth-original.jpg`: original logo image the icons were made from
 - `docs/CHANGELOG.md`: what each build phase added
 - `docs/security-review.md`: plain-language security review, and how to re-check it with `/security-check`
