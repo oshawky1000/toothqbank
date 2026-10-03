@@ -74,19 +74,23 @@ Questions arrive as JSON files in the format described in `docs/question-format.
 - **Sign up:** full name, phone number (Egyptian format, e.g. 01012345678), password. No email.
   - Implement with Supabase email/password auth using a synthetic email built from the normalised phone number, e.g. `201012345678@students.toothqbank.app`. Disable email confirmation.
   - Students only ever see and type their phone number.
-- **New accounts start as `pending`.** A pending student can log in and browse the course layout, but every course shows as locked. Show a clear banner: "Your account is waiting for approval. Send us a WhatsApp message to activate it." Include a WhatsApp button.
-- **Account statuses:** `pending`, `approved`, `rejected`, `revoked`. Every status change can be undone from the admin dashboard. Rejected or revoked students see a message to contact us on WhatsApp and cannot open any questions.
+- **New accounts start as `pending`.** A pending student can log in and browse the course layout, but every course shows as locked. Show a clear banner: "Your account is waiting for approval. Contact a ToothQBank admin to activate it." (See "Contact details" below.)
+- **Account statuses:** `pending`, `approved`, `rejected`, `revoked`. Every status change can be undone from the admin dashboard. Rejected or revoked students see a message to contact a ToothQBank admin and cannot open any questions.
 - **Course access is separate from account status.** Each course is unlocked per student by an admin. A student sees questions only if their status is `approved` AND that course is unlocked for them.
-- **Locked course card:** shows the course name, number of questions, the price **100 EGP**, and an "Unlock on WhatsApp" button.
-  - The button opens `https://wa.me/966555465163` with a prefilled message: "Hi, I'd like to unlock [Course name] on ToothQBank. My registered phone number is [phone]."
-  - Keep the price and WhatsApp number in one config file so they are easy to change.
+- **Locked course card:** shows the course name, number of questions, the price **100 EGP**, and a "How to unlock" button.
+  - The button shows: "To unlock this course, contact a ToothQBank admin." (See "Contact details" below.)
 - **No free sample questions.** Locked means fully locked.
-- **No payments on the website.** Payment happens on WhatsApp; an admin then unlocks the course.
-- **Forgot password:** a link that says "Forgot your password? Message us on WhatsApp" (opens WhatsApp). An admin resets it from the dashboard.
+- **No payments on the website.** Payment is arranged directly with an admin, who then unlocks the course.
+- **Forgot password:** a link that says "Forgot your password?" and shows "Contact a ToothQBank admin to reset your password." An admin resets it from the dashboard.
+
+## Contact details (current rule, overrides older WhatsApp wording)
+- **Do not show any phone number, WhatsApp number or WhatsApp link anywhere on the site.** Admins are still being hired and contact details will change.
+- Wherever the site needs a contact action (locked course card, pending banner, rejected/revoked message, forgot password, device-limit message), use a "How to unlock" style button or note that says to **contact a ToothQBank admin**, e.g. "To unlock this course, contact a ToothQBank admin."
+- Keep the price, these contact messages and an optional contact link (empty for now) in the one settings file: `src/config.ts`. If the contact link is empty, show no link, only the message. Never hard-code contact details anywhere else.
 
 ## One device per account
 - On first login, the browser generates a random device ID and stores it locally. That ID is saved against the student's account.
-- If the same account logs in from a different device ID, block it with: "This account is already active on another device. Contact us on WhatsApp to switch devices." Sign them out.
+- If the same account logs in from a different device ID, block it with: "This account is already active on another device. Contact a ToothQBank admin to switch devices." Sign them out.
 - Admins can **Reset device** from the dashboard. The next device to log in becomes the bound device.
 - Admin accounts are exempt from the device limit.
 
@@ -122,7 +126,7 @@ Questions arrive as JSON files in the format described in `docs/question-format.
   - Approve, Reject, Revoke, Restore (undo)
   - Unlock or lock each course (checkboxes)
   - Reset device
-  - Reset password (sets a new password the admin types, then shows it so they can send it on WhatsApp)
+  - Reset password (sets a new password the admin types, then shows it so they can send it to the student)
   - Edit notes (e.g. "Paid InstaPay 3 Nov, GM1")
 - Approving and unlocking must take seconds on a phone. Big, clear buttons. Admins will use this on a phone too.
 - **Reports:** list of error reports with question preview, reason, comment, and student. Mark as resolved.
@@ -133,7 +137,7 @@ Questions arrive as JSON files in the format described in `docs/question-format.
 ## Build phases (one phase per session; do not skip ahead)
 1. **Skeleton + deploy:** Vite/React app with the ToothQBank layout shell, deployed on Cloudflare Pages. Walk Omar through connecting Cloudflare Pages to the repo. Done when he opens the live link on his phone.
 2. **Database + auth:** all tables, RLS, seed courses and chapters, phone sign-up/login, pending state, device lock. Walk Omar through creating the Supabase project and pasting the SQL.
-3. **Course layout:** home, course and chapter pages, locked / coming-soon states, WhatsApp buttons.
+3. **Course layout:** home, course and chapter pages, locked / coming-soon states, "How to unlock" buttons (contact-an-admin messages, see "Contact details").
 4. **Admin dashboard:** students, statuses, unlocks, device reset, password reset, notes, and the question import. Import `data/gm1-pilot.json` as the test.
 5. **Practice:** session builder, tutor mode, question screen, report error.
 6. **Timed mode + progress:** timed sessions, results, review, saved progress, filters, resume.
@@ -145,3 +149,4 @@ Questions arrive as JSON files in the format described in `docs/question-format.
 - When Omar must do something outside the code (Supabase, Cloudflare, GitHub), stop and give numbered steps, then wait for him to confirm.
 - Prefer simple, readable code over clever code. No unnecessary libraries.
 - Keep a short `docs/CHANGELOG.md`: one line per phase.
+- At the end of each phase, open a pull request from the working branch into `main` and give Omar click-by-click steps to merge it. Cloudflare Pages deploys `main` automatically.
