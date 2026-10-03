@@ -1,0 +1,1001 @@
+{
+  "format_version": 1,
+  "course": {
+    "id": "gm1",
+    "name": "General Medicine 1",
+    "year": 3,
+    "semester": 1
+  },
+  "questions": [
+    {
+      "id": "GM1-001",
+      "course_id": "gm1",
+      "chapter": "Heart failure",
+      "lecture": "Lecture 1 & 2",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Clinical picture of right sided heart failure includes all of the following EXCEPT:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Paroxysmal nocturnal dyspnoea"
+        },
+        {
+          "key": "B",
+          "text": "Congested enlarged and tender liver"
+        },
+        {
+          "key": "C",
+          "text": "Bilateral edema of the ankles (lower limbs)"
+        },
+        {
+          "key": "D",
+          "text": "Congested neck veins"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Paroxysmal nocturnal dyspnoea is a sign of pulmonary congestion, so it belongs to LEFT sided heart failure. Right sided failure causes systemic congestion instead: congested neck veins, a congested, enlarged, tender liver, and bilateral soft pitting edema of the lower limbs (options B, C and D).",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "34",
+      "images": []
+    },
+    {
+      "id": "GM1-002",
+      "course_id": "gm1",
+      "chapter": "Heart failure",
+      "lecture": "Lecture 1 & 2",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Heart failure is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "None of the above"
+        },
+        {
+          "key": "B",
+          "text": "A condition where the heart cannot pump an adequate supply of blood to meet the metabolic body needs"
+        },
+        {
+          "key": "C",
+          "text": "A condition where the heart pumps an adequate supply of blood to meet the metabolic body needs"
+        },
+        {
+          "key": "D",
+          "text": "A condition where the heart cannot pump an adequate supply of blood, but this supply meets the metabolic body needs"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Heart failure is defined as the heart being unable to pump an adequate supply of blood (cardiac output) to meet the metabolic needs of the body. Option C describes a normal heart, and option D contradicts itself: if the supply meets the body's needs, it is not failure.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "34",
+      "images": []
+    },
+    {
+      "id": "GM1-003",
+      "course_id": "gm1",
+      "chapter": "Heart failure",
+      "lecture": "Lecture 1 & 2",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "A condition where the heart cannot pump an adequate supply of blood to meet the metabolic needs of the body is called:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Heart failure"
+        },
+        {
+          "key": "B",
+          "text": "Renal failure"
+        },
+        {
+          "key": "C",
+          "text": "Liver failure"
+        },
+        {
+          "key": "D",
+          "text": "None of the above"
+        }
+      ],
+      "answer": "A",
+      "explanation": "This is the textbook definition of heart failure: the heart cannot pump an adequate cardiac output to meet the body's metabolic needs. Renal and liver failure describe failure of the kidney and liver, not of the heart's pumping.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "317",
+      "images": []
+    },
+    {
+      "id": "GM1-004",
+      "course_id": "gm1",
+      "chapter": "Heart failure",
+      "lecture": "Lecture 1 & 2",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Pulmonary congestion which takes place due to fluid shift from interstitial fluid to circulation within 1-2 hours after sleep causes:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Congested neck veins"
+        },
+        {
+          "key": "B",
+          "text": "Congested, tender liver"
+        },
+        {
+          "key": "C",
+          "text": "Low cardiac output"
+        },
+        {
+          "key": "D",
+          "text": "Paroxysmal nocturnal dyspnea"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Paroxysmal nocturnal dyspnea happens when fluid shifts from the interstitial tissues back into the circulation 1–2 hours after the patient lies down to sleep, causing pulmonary congestion that wakes them breathless. Neck vein and liver congestion are signs of right sided failure, not pulmonary congestion.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "34",
+      "images": []
+    },
+    {
+      "id": "GM1-005",
+      "course_id": "gm1",
+      "chapter": "Heart failure",
+      "lecture": "Lecture 1 & 2",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Clinical picture of left sided heart failure includes all of the following EXCEPT:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Orthopnoea"
+        },
+        {
+          "key": "B",
+          "text": "Congested, enlarged, tender liver"
+        },
+        {
+          "key": "C",
+          "text": "Dyspnoea"
+        },
+        {
+          "key": "D",
+          "text": "Acute pulmonary edema"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A congested, enlarged, tender liver comes from systemic venous congestion, which is RIGHT sided heart failure. Orthopnoea, dyspnoea and acute pulmonary edema are all manifestations of pulmonary congestion in left sided failure.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "35",
+      "images": []
+    },
+    {
+      "id": "GM1-006",
+      "course_id": "gm1",
+      "chapter": "Heart failure",
+      "lecture": "Lecture 1 & 2",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Enlarged congested painful and tender liver is a manifestation of:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Coronary artery occlusion"
+        },
+        {
+          "key": "B",
+          "text": "Right side heart failure"
+        },
+        {
+          "key": "C",
+          "text": "None of the above"
+        },
+        {
+          "key": "D",
+          "text": "Left side heart failure"
+        }
+      ],
+      "answer": "B",
+      "explanation": "When the right ventricle fails, blood backs up into the systemic veins and the liver becomes congested, enlarged and tender. Left sided failure backs blood up into the lungs instead, not into the liver.",
+      "answer_status": "verified",
+      "times_seen": 2,
+      "source_pages": "35 (x2)",
+      "images": []
+    },
+    {
+      "id": "GM1-007",
+      "course_id": "gm1",
+      "chapter": "Heart failure",
+      "lecture": "Lecture 1 & 2",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Left side heart failure is manifested by:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pulmonary congestion symptoms"
+        },
+        {
+          "key": "B",
+          "text": "Low cardiac output symptoms"
+        },
+        {
+          "key": "C",
+          "text": "None of the above"
+        },
+        {
+          "key": "D",
+          "text": "Both of the above"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Left sided heart failure has TWO groups of manifestations in the notes: (I) low cardiac output (dizziness, fatigue, cold hands, oliguria, weak rapid pulse) and (II) pulmonary congestion (dyspnoea, orthopnoea, PND, acute pulmonary edema). So the answer is 'Both of the above'. Note: the screenshot on page 35 marks B, but the copies on pages 304 and 306 are corrected to D.",
+      "answer_status": "corrected",
+      "times_seen": 3,
+      "source_pages": "35, 304, 306",
+      "images": []
+    },
+    {
+      "id": "GM1-008",
+      "course_id": "gm1",
+      "chapter": "Heart failure",
+      "lecture": "Lecture 1 & 2",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Low cardiac output symptoms include all of the following EXCEPT:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fatigue"
+        },
+        {
+          "key": "B",
+          "text": "Peripheral cyanosis"
+        },
+        {
+          "key": "C",
+          "text": "Warm extremities due to more blood perfusion"
+        },
+        {
+          "key": "D",
+          "text": "Headache"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Low cardiac output means LESS blood reaches the periphery, so the hands are cold, not warm. Fatigue (skeletal muscle), peripheral cyanosis (skin) and headache (CNS) are all listed low output manifestations.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "36",
+      "images": []
+    },
+    {
+      "id": "GM1-009",
+      "course_id": "gm1",
+      "chapter": "Heart failure",
+      "lecture": "Lecture 1 & 2",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Bilateral soft pitting edema of both lower limbs (ankles) is a manifestation of:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pleurisy"
+        },
+        {
+          "key": "B",
+          "text": "Pericarditis"
+        },
+        {
+          "key": "C",
+          "text": "Right side heart failure"
+        },
+        {
+          "key": "D",
+          "text": "Left side heart failure"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Bilateral, soft, pitting lower limb edema is a sign of systemic venous congestion, which is right sided heart failure. Left sided failure congests the lungs; pleurisy and pericarditis present with chest pain, not edema.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "36",
+      "images": []
+    },
+    {
+      "id": "GM1-010",
+      "course_id": "gm1",
+      "chapter": "Heart failure",
+      "lecture": "Lecture 1 & 2",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Dyspnea of gradual onset and progressive course is a manifestation of:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Left side heart failure"
+        },
+        {
+          "key": "B",
+          "text": "Pericarditis"
+        },
+        {
+          "key": "C",
+          "text": "Right side heart failure"
+        },
+        {
+          "key": "D",
+          "text": "Cardiac neurosis"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In left sided failure, dyspnoea first appears on severe exertion, then on moderate exertion, and finally at rest: a gradual, progressive course caused by worsening pulmonary congestion. Right sided failure causes systemic (not pulmonary) congestion.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "36",
+      "images": []
+    },
+    {
+      "id": "GM1-011",
+      "course_id": "gm1",
+      "chapter": "Heart failure",
+      "lecture": "Lecture 1 & 2",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Dyspnea which occurs on lying down and improves by sitting or standing is called:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Paroxysmal nocturnal dyspnea"
+        },
+        {
+          "key": "B",
+          "text": "Acute pulmonary edema"
+        },
+        {
+          "key": "C",
+          "text": "Orthopnea"
+        },
+        {
+          "key": "D",
+          "text": "None of the above"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Orthopnoea is dyspnoea on lying flat (venous return to the heart increases) that improves on sitting or standing. PND is different: it wakes the patient 1–2 hours after falling asleep.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "36",
+      "images": []
+    },
+    {
+      "id": "GM1-012",
+      "course_id": "gm1",
+      "chapter": "Chest pain",
+      "lecture": "Lecture 3",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Non cardiac causes of chest pain include:",
+      "options": [
+        {
+          "key": "A",
+          "text": "None of the above"
+        },
+        {
+          "key": "B",
+          "text": "Pericarditis"
+        },
+        {
+          "key": "C",
+          "text": "Costochondritis"
+        },
+        {
+          "key": "D",
+          "text": "Aortic dissection"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Costochondritis (inflammation of the rib cartilage) is a non-cardiac cause. Pericarditis and aortic dissection are both on the CARDIAC list of chest pain causes.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "37",
+      "images": []
+    },
+    {
+      "id": "GM1-013",
+      "course_id": "gm1",
+      "chapter": "Chest pain",
+      "lecture": "Lecture 3",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Non cardiac causes of chest pain include:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Coronary artery occlusion"
+        },
+        {
+          "key": "B",
+          "text": "Cardiac neurosis"
+        },
+        {
+          "key": "C",
+          "text": "Pericarditis"
+        },
+        {
+          "key": "D",
+          "text": "Pulmonary embolism"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Pulmonary embolism (from a detached lower limb DVT) is a non-cardiac cause. Coronary artery occlusion, cardiac neurosis and pericarditis are all CARDIAC causes of chest pain. The same stem appears with different options. Learn the lists, not the letter.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "316",
+      "images": []
+    },
+    {
+      "id": "GM1-014",
+      "course_id": "gm1",
+      "chapter": "Chest pain",
+      "lecture": "Lecture 3",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Non-cardiac causes of chest pain include all of the following EXCEPT:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pleurisy"
+        },
+        {
+          "key": "B",
+          "text": "Fracture ribs"
+        },
+        {
+          "key": "C",
+          "text": "Pericarditis"
+        },
+        {
+          "key": "D",
+          "text": "Pulmonary embolism"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Pericarditis is a CARDIAC cause (inflammation of the pericardium). Pleurisy, fractured ribs and pulmonary embolism are all on the non-cardiac list.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "37",
+      "images": []
+    },
+    {
+      "id": "GM1-015",
+      "course_id": "gm1",
+      "chapter": "Chest pain",
+      "lecture": "Lecture 3",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Non cardiac causes of chest pain include all of the following EXCEPT:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pulmonary embolism"
+        },
+        {
+          "key": "B",
+          "text": "Esophageal causes"
+        },
+        {
+          "key": "C",
+          "text": "Pleurisy"
+        },
+        {
+          "key": "D",
+          "text": "Pericarditis"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Pericarditis is the only cardiac cause here. Pulmonary embolism, esophageal pain and pleurisy are all non-cardiac causes of chest pain.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "324",
+      "images": []
+    },
+    {
+      "id": "GM1-016",
+      "course_id": "gm1",
+      "chapter": "Chest pain",
+      "lecture": "Lecture 3",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Pleurisy can occur as a result of:",
+      "options": [
+        {
+          "key": "A",
+          "text": "All of the above"
+        },
+        {
+          "key": "B",
+          "text": "Tuberculosis"
+        },
+        {
+          "key": "C",
+          "text": "Pneumonia"
+        },
+        {
+          "key": "D",
+          "text": "Viral infection"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Pleurisy is inflammation of the pleura due to viral or bacterial infection. Tuberculosis and pneumonia are bacterial causes and viral infection is the other, so all three are correct.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "37",
+      "images": []
+    },
+    {
+      "id": "GM1-017",
+      "course_id": "gm1",
+      "chapter": "Chest pain",
+      "lecture": "Lecture 3",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Chest pain caused by pericarditis can be described as being:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Stitching"
+        },
+        {
+          "key": "B",
+          "text": "Squeezing"
+        },
+        {
+          "key": "C",
+          "text": "Stabbing"
+        },
+        {
+          "key": "D",
+          "text": "None of the above"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Pericarditis pain comes from friction between the two pericardial layers. It is sharp and STITCHING and increases with respiration or coughing. Squeezing (heavy, compressing) pain is coronary insufficiency.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "38",
+      "images": []
+    },
+    {
+      "id": "GM1-018",
+      "course_id": "gm1",
+      "chapter": "Chest pain",
+      "lecture": "Lecture 3",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Cardiac neurosis is more common in:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Both of the above"
+        },
+        {
+          "key": "B",
+          "text": "Females"
+        },
+        {
+          "key": "C",
+          "text": "None of the above"
+        },
+        {
+          "key": "D",
+          "text": "Males"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Cardiac neurosis is psychological chest pain and is more common in females. The pain is inframammary, pricking, and usually accompanied by sighing.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "38",
+      "images": []
+    },
+    {
+      "id": "GM1-019",
+      "course_id": "gm1",
+      "chapter": "Chest pain",
+      "lecture": "Lecture 3",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "A patient suffering of heavy and squeezing chest pain of few minutes duration which is precipitated by exertion and relieved by rest is diagnosed as having:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Coronary artery occlusion"
+        },
+        {
+          "key": "B",
+          "text": "Cardiac neurosis"
+        },
+        {
+          "key": "C",
+          "text": "Pericarditis"
+        },
+        {
+          "key": "D",
+          "text": "Coronary insufficiency"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Coronary insufficiency (angina) causes heavy, squeezing pain lasting a FEW MINUTES that is precipitated by exertion and relieved by rest or sublingual nitrates. Coronary artery occlusion (MI) is the trap: its pain is longer, more severe, NOT precipitated by exertion and NOT relieved by rest.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "38",
+      "images": []
+    },
+    {
+      "id": "GM1-020",
+      "course_id": "gm1",
+      "chapter": "Chest pain",
+      "lecture": "Lecture 3",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Burning chest pain which is related to spicy food and is relieved by antacids is caused by:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Intercostal myositis"
+        },
+        {
+          "key": "B",
+          "text": "Esophageal pain (Gastro-esophageal reflux)"
+        },
+        {
+          "key": "C",
+          "text": "Aortic dissection"
+        },
+        {
+          "key": "D",
+          "text": "Pericarditis"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Esophageal pain from reflux is BURNING, related to fatty or spicy meals, worse lying flat and relieved by antacids. Intercostal myositis is diffuse and worse with movement; aortic dissection is severe 'sawing' pain.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "38",
+      "images": []
+    },
+    {
+      "id": "GM1-021",
+      "course_id": "gm1",
+      "chapter": "Chest pain",
+      "lecture": "Lecture 3",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Cardiac causes of chest pain include:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cardiac neurosis"
+        },
+        {
+          "key": "B",
+          "text": "Coronary artery occlusion"
+        },
+        {
+          "key": "C",
+          "text": "Aortic dissection"
+        },
+        {
+          "key": "D",
+          "text": "All of the above"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The cardiac list has five causes: coronary insufficiency, coronary artery occlusion, pericarditis, aortic dissection and cardiac neurosis. All three options are on it.",
+      "answer_status": "confirmed",
+      "times_seen": 2,
+      "source_pages": "39, 316",
+      "images": []
+    },
+    {
+      "id": "GM1-022",
+      "course_id": "gm1",
+      "chapter": "Chest pain",
+      "lecture": "Lecture 3",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Aortic dissection can be caused by:",
+      "options": [
+        {
+          "key": "A",
+          "text": "All of the above"
+        },
+        {
+          "key": "B",
+          "text": "Pericarditis"
+        },
+        {
+          "key": "C",
+          "text": "Hypertension"
+        },
+        {
+          "key": "D",
+          "text": "Pleurisy"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Aortic dissection is due to hypertension: blood enters an intimal tear and dissects through the media of the aortic wall. The pain is severe, continuous and 'sawing'.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "39",
+      "images": []
+    },
+    {
+      "id": "GM1-023",
+      "course_id": "gm1",
+      "chapter": "Chest pain",
+      "lecture": "Lecture 3",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Chest pain which is accompanied by the appearance of vesicles over the skin can be caused by:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Costochondritis"
+        },
+        {
+          "key": "B",
+          "text": "Herpes Zoster"
+        },
+        {
+          "key": "C",
+          "text": "Pulmonary embolism"
+        },
+        {
+          "key": "D",
+          "text": "Pleurisy"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Herpes zoster is the SKIN cause of non-cardiac chest pain, and the vesicles are the clue. The other options cause chest pain without a skin rash.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "39",
+      "images": []
+    },
+    {
+      "id": "GM1-024",
+      "course_id": "gm1",
+      "chapter": "Cyanosis",
+      "lecture": "Lecture 4",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Cyanosis is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Yellowish coloration of skin and mucous membranes"
+        },
+        {
+          "key": "B",
+          "text": "Bluish coloration of skin and mucous membranes"
+        },
+        {
+          "key": "C",
+          "text": "Reddish coloration of skin and mucous membranes"
+        },
+        {
+          "key": "D",
+          "text": "None of the above"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Cyanosis is bluish discoloration of the skin and mucous membranes. Yellowish discoloration is jaundice.",
+      "answer_status": "confirmed",
+      "times_seen": 2,
+      "source_pages": "40, 327",
+      "images": []
+    },
+    {
+      "id": "GM1-025",
+      "course_id": "gm1",
+      "chapter": "Cyanosis",
+      "lecture": "Lecture 4",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Excessive exposure to cold with vasoconstriction causes:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Central cyanosis"
+        },
+        {
+          "key": "B",
+          "text": "Peripheral cyanosis"
+        },
+        {
+          "key": "C",
+          "text": "Both of the above"
+        },
+        {
+          "key": "D",
+          "text": "None of the above"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Cold-induced vasoconstriction slows the circulation in the fingers and toes, so more oxygen is extracted: PERIPHERAL cyanosis. Central cyanosis needs reduced haemoglobin above 5 g% in the capillaries (lung or heart disease).",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "40",
+      "images": []
+    },
+    {
+      "id": "GM1-026",
+      "course_id": "gm1",
+      "chapter": "Cyanosis",
+      "lecture": "Lecture 4",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Increased level of reduced hemoglobin in capillaries above 5 gm% occurs in:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Peripheral cyanosis"
+        },
+        {
+          "key": "B",
+          "text": "Central cyanosis"
+        },
+        {
+          "key": "C",
+          "text": "Both of the above"
+        },
+        {
+          "key": "D",
+          "text": "None of the above"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Central cyanosis is defined by reduced haemoglobin above 5 g% in the capillaries, so the lips and tongue are blue as well as the skin. Peripheral cyanosis is due to stagnant circulation and affects only the fingers and toes.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "41",
+      "images": []
+    },
+    {
+      "id": "GM1-027",
+      "course_id": "gm1",
+      "chapter": "Cyanosis",
+      "lecture": "Lecture 4",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Central cyanosis can be caused by:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Severe lung disease"
+        },
+        {
+          "key": "B",
+          "text": "Congenital heart disease"
+        },
+        {
+          "key": "C",
+          "text": "Both of the above"
+        },
+        {
+          "key": "D",
+          "text": "None of the above"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Central cyanosis causes are severe lung disease (poor oxygenation), congenital heart disease with mixing of venous and arterial blood (ASD/VSD), and severe left heart failure with pulmonary edema. Both A and B are correct.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "41",
+      "images": []
+    },
+    {
+      "id": "GM1-028",
+      "course_id": "gm1",
+      "chapter": "Edema",
+      "lecture": "Lecture 4",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Causes of generalized edema include:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Renal failure"
+        },
+        {
+          "key": "B",
+          "text": "Hepatic failure"
+        },
+        {
+          "key": "C",
+          "text": "Nutritional diminished protein intake"
+        },
+        {
+          "key": "D",
+          "text": "All the above"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Generalized edema has four causes: cardiac (right heart failure), hepatic (liver failure), renal (nephrotic syndrome or renal failure) and nutritional (low protein intake). All three options are on the list.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "40",
+      "images": []
+    },
+    {
+      "id": "GM1-029",
+      "course_id": "gm1",
+      "chapter": "Edema",
+      "lecture": "Lecture 4",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "All of the following are causes of generalized edema EXCEPT:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cardiac failure"
+        },
+        {
+          "key": "B",
+          "text": "Hepatic failure"
+        },
+        {
+          "key": "C",
+          "text": "Venous obstruction"
+        },
+        {
+          "key": "D",
+          "text": "Renal failure"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Venous obstruction (e.g. DVT of one leg) causes LOCALIZED edema, limited to one limb. Cardiac, hepatic and renal failure all cause generalized edema.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "41",
+      "images": []
+    },
+    {
+      "id": "GM1-030",
+      "course_id": "gm1",
+      "chapter": "Edema",
+      "lecture": "Lecture 4",
+      "category": "past_paper",
+      "exam_label": null,
+      "stem": "Edema occurs due to accumulation of excessive amount of interstitial fluid due to:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Increased hydrostatic capillary pressure"
+        },
+        {
+          "key": "B",
+          "text": "Decreased plasma osmotic pressure"
+        },
+        {
+          "key": "C",
+          "text": "Both of the above"
+        },
+        {
+          "key": "D",
+          "text": "None of the above"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Edema has two mechanisms: increased capillary hydrostatic pressure pushing fluid out, and decreased plasma osmotic pressure (hypoalbuminaemia) failing to hold fluid in. Both are correct.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "41",
+      "images": []
+    }
+  ]
+}
