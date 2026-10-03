@@ -3,8 +3,8 @@ import { useAuth } from '../auth/AuthContext.tsx'
 import {
   ComingSoonBox,
   LockedBox,
-  PracticeSoon,
   ProgressLine,
+  StartPractice,
   SectionList,
 } from '../components/CourseParts.tsx'
 import LoadProblem from '../components/LoadProblem.tsx'
@@ -49,7 +49,11 @@ export default function Chapter() {
             </div>
           )}
           <SectionList sections={chapter.sections} />
-          <PracticeSoon />
+          <StartPractice
+            to={`/course/${course.id}/practice?chapter=${chapter.id}`}
+            label="Practise this chapter"
+            text="Start a session with this chapter selected. You can add more chapters before starting."
+          />
         </div>
       )}
     </section>

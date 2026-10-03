@@ -8,12 +8,16 @@ import Login from './pages/Login.tsx'
 import NotFound from './pages/NotFound.tsx'
 import Signup from './pages/Signup.tsx'
 
-// Admin pages load only when an admin opens them, so students download less.
+// These pages load only when opened, so the first visit downloads less.
 const AdminLayout = lazy(() => import('./pages/admin/AdminLayout.tsx'))
 const Students = lazy(() => import('./pages/admin/Students.tsx'))
 const Reports = lazy(() => import('./pages/admin/Reports.tsx'))
 const Import = lazy(() => import('./pages/admin/Import.tsx'))
 const Stats = lazy(() => import('./pages/admin/Stats.tsx'))
+const Practice = lazy(() => import('./pages/Practice.tsx'))
+const Session = lazy(() => import('./pages/Session.tsx'))
+
+const loading = <p className="muted">Loading…</p>
 
 export default function App() {
   return (
@@ -23,9 +27,25 @@ export default function App() {
         <Route path="course/:courseId" element={<Course />} />
         <Route path="course/:courseId/chapter/:chapterId" element={<Chapter />} />
         <Route
+          path="course/:courseId/practice"
+          element={
+            <Suspense fallback={loading}>
+              <Practice />
+            </Suspense>
+          }
+        />
+        <Route
+          path="session/:sessionId"
+          element={
+            <Suspense fallback={loading}>
+              <Session />
+            </Suspense>
+          }
+        />
+        <Route
           path="admin"
           element={
-            <Suspense fallback={<p className="muted">Loading…</p>}>
+            <Suspense fallback={loading}>
               <AdminLayout />
             </Suspense>
           }
