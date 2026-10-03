@@ -1,0 +1,1252 @@
+{
+  "format_version": 1,
+  "course": {
+    "id": "op1",
+    "name": "Oral Pathology 1",
+    "year": 3,
+    "semester": 1
+  },
+  "questions": [
+    {
+      "id": "OP1-P001",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the condition shown in the patient photograph, radiograph and clinical picture.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dentinogenesis imperfecta"
+        },
+        {
+          "key": "B",
+          "text": "Down's syndrome"
+        },
+        {
+          "key": "C",
+          "text": "Cleidocranial dysplasia"
+        },
+        {
+          "key": "D",
+          "text": "Amelogenesis imperfecta"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Cleidocranial dysplasia: absent or hypoplastic clavicles let the patient bring the shoulders together in front of the chest (as in the photo). The jaws show many retained deciduous and unerupted supernumerary teeth, with delayed eruption of permanent teeth.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "8, 50, 51",
+      "images": [
+        "op1-p001.jpg",
+        "op1-p001-2.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P002",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the condition affecting the tooth shown.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Turner's hypoplasia"
+        },
+        {
+          "key": "B",
+          "text": "Amelogenesis imperfecta"
+        },
+        {
+          "key": "C",
+          "text": "Osteogenesis imperfecta"
+        },
+        {
+          "key": "D",
+          "text": "Dental fluorosis"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Turner's hypoplasia (Turner's tooth): a single permanent tooth with a localized enamel defect and brown/yellow discoloration, caused by infection or trauma of the overlying deciduous tooth damaging the developing successor. Most often a maxillary incisor or a premolar.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "13, 56",
+      "images": [
+        "op1-p002.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P003",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the condition shown in this newborn.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Distomolar"
+        },
+        {
+          "key": "B",
+          "text": "Neonatal teeth"
+        },
+        {
+          "key": "C",
+          "text": "Paramolar"
+        },
+        {
+          "key": "D",
+          "text": "Mesiodense"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Neonatal teeth erupt within the first 30 days after birth (natal teeth are present at birth). They are usually mandibular central incisors and mostly part of the normal deciduous dentition.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "20, 53",
+      "images": [
+        "op1-p003.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P004",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the condition shown in this newborn.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dilaceration"
+        },
+        {
+          "key": "B",
+          "text": "Natal teeth"
+        },
+        {
+          "key": "C",
+          "text": "Concrescence"
+        },
+        {
+          "key": "D",
+          "text": "Mesiodens"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Natal teeth are present at birth (neonatal teeth erupt within the first 30 days). They are most often mandibular central incisors and can cause ulceration of the tongue during feeding (Riga-Fede disease).",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "24",
+      "images": [
+        "op1-p004.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P005",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the syndrome shown (hair, teeth and nails).",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ludwig's angina"
+        },
+        {
+          "key": "B",
+          "text": "Cleidocranial dysplasia"
+        },
+        {
+          "key": "C",
+          "text": "Streeter's syndrome"
+        }
+      ],
+      "answer": "C",
+      "explanation": "These pictures show the classic triad of an ectodermal dysplasia: sparse, fine hair, missing and cone-shaped (conical) teeth, and dystrophic nails. In this course this condition is examined as Streeter's syndrome; patients also have dry skin and xerostomia.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "26",
+      "images": [
+        "op1-p005.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P006",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the developmental anomaly shown in these teeth and radiograph.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Concrescence"
+        },
+        {
+          "key": "B",
+          "text": "Paramolar"
+        },
+        {
+          "key": "C",
+          "text": "Dilaceration"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Dilaceration is an abnormal angulation or sharp bend in the root or crown of a tooth, usually caused by trauma to the developing tooth. Concrescence is fusion of two teeth by cementum only; a paramolar is a supernumerary molar.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "27",
+      "images": [
+        "op1-p006.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P007",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of teeth",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the condition shown clinically and under ultraviolet light.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Amelogenesis imperfecta"
+        },
+        {
+          "key": "B",
+          "text": "Tetracycline stain"
+        },
+        {
+          "key": "C",
+          "text": "Enamel hypoplasia"
+        },
+        {
+          "key": "D",
+          "text": "Dentinogenesis imperfecta"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Tetracycline staining: tetracycline taken during tooth development binds calcium in dentin, giving yellow-brown/grey teeth that FLUORESCE bright yellow under ultraviolet light, often in bands following the incremental lines.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "30",
+      "images": [
+        "op1-p007.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P008",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of the oral soft tissues",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ankyloglossia"
+        },
+        {
+          "key": "B",
+          "text": "Microglossia"
+        },
+        {
+          "key": "C",
+          "text": "Geographic tongue"
+        },
+        {
+          "key": "D",
+          "text": "Lingual thyroid nodule"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Geographic tongue (benign migratory glossitis) shows smooth red patches where the filiform papillae are lost, each surrounded by a raised white or yellow border. The patches change shape and position over days, so the pattern 'moves' like a map.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "1, 61",
+      "images": [
+        "op1-p008.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P009",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of the oral soft tissues",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the anomaly shown.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Alveolar cleft"
+        },
+        {
+          "key": "B",
+          "text": "Cleft lip"
+        },
+        {
+          "key": "C",
+          "text": "Cleft tongue"
+        },
+        {
+          "key": "D",
+          "text": "Bifid uvula"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Bifid uvula is the mildest form of cleft palate: the uvula is split into two. It can be a marker of a submucous cleft of the palate.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "31",
+      "images": [
+        "op1-p009.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P010",
+      "course_id": "op1",
+      "chapter": "Developmental alterations of the oral soft tissues",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown on the tongue.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Lingual thyroid nodule"
+        },
+        {
+          "key": "B",
+          "text": "Geographic tongue"
+        },
+        {
+          "key": "C",
+          "text": "Median rhomboid glossitis"
+        },
+        {
+          "key": "D",
+          "text": "Ankyloglossia (tongue tie)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Median rhomboid glossitis: a smooth, red, rhomboid (diamond-shaped) depapillated area in the midline of the dorsum of the tongue, just in front of the circumvallate papillae. It is associated with chronic Candida infection.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "42",
+      "images": [
+        "op1-p010.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P011",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown in the radiograph, gross specimen and histology.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Periapical cyst"
+        },
+        {
+          "key": "B",
+          "text": "Gorlin's cyst"
+        },
+        {
+          "key": "C",
+          "text": "Eruption cyst"
+        },
+        {
+          "key": "D",
+          "text": "Dentigerous cyst"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Periapical (radicular) cyst: a well-defined radiolucency at the apex of a non-vital tooth, a cyst sac attached to the root apex on the extracted tooth, and a lining of stratified squamous epithelium with a chronically inflamed wall. It is the most common odontogenic cyst.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "3, 32, 63",
+      "images": [
+        "op1-p011.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P012",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown clinically and radiographically.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ameloblastoma"
+        },
+        {
+          "key": "B",
+          "text": "Odontome"
+        },
+        {
+          "key": "C",
+          "text": "Adenomatoid odontogenic tumor"
+        },
+        {
+          "key": "D",
+          "text": "Calcifying odontogenic cyst"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Calcifying odontogenic cyst (Gorlin cyst): it can present as a gingival or jaw swelling, and the radiograph shows a mixed radiolucent/radiopaque lesion because of calcifications. Histologically its hallmark is ghost cells (keratinized epithelial cells that have lost their nuclei).",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "4, 49",
+      "images": [
+        "op1-p012.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P013",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "The structures shown in the lining of this cyst are:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cholesterol clefts"
+        },
+        {
+          "key": "B",
+          "text": "Rushton bodies"
+        },
+        {
+          "key": "C",
+          "text": "Russel bodies"
+        },
+        {
+          "key": "D",
+          "text": "Ghost cells"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rushton bodies are curved, linear or arch-shaped hyaline bodies within the epithelial lining of odontogenic cysts, especially the periapical (radicular) cyst. They are of vascular origin (from the inflammatory exudate). Russel bodies come from plasma cells; ghost cells belong to the calcifying odontogenic cyst.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "9, 47",
+      "images": [
+        "op1-p013.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P014",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown in the histology.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dentigerous cyst"
+        },
+        {
+          "key": "B",
+          "text": "Ameloblastoma"
+        },
+        {
+          "key": "C",
+          "text": "Odontogenic keratocyst"
+        },
+        {
+          "key": "D",
+          "text": "Calcifying odontogenic cyst"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Odontogenic keratocyst: a thin, uniform lining of parakeratinized stratified squamous epithelium about 6–8 cells thick, with a corrugated (wavy) surface and a palisaded basal layer of columnar or cuboidal cells. The flat junction with the wall explains why it separates easily.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "22, 45",
+      "images": [
+        "op1-p014.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P015",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown in the gross specimen and histology.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dentigerous cyst"
+        },
+        {
+          "key": "B",
+          "text": "Odontogenic keratocyst"
+        },
+        {
+          "key": "C",
+          "text": "Periapical granuloma"
+        },
+        {
+          "key": "D",
+          "text": "Adenomatoid odontogenic tumor"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Dentigerous cyst: the cyst sac is attached to the tooth at the cemento-enamel junction and encloses the crown of an unerupted tooth. It is the most common developmental odontogenic cyst, usually around mandibular third molars or maxillary canines.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "25",
+      "images": [
+        "op1-p015.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P016",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown in the gross specimen.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Odontogenic keratocyst"
+        },
+        {
+          "key": "B",
+          "text": "Dentigerous cyst"
+        },
+        {
+          "key": "C",
+          "text": "Gorlin's cyst"
+        },
+        {
+          "key": "D",
+          "text": "Periapical cyst"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Dentigerous cyst: the gross specimen shows the crown of an unerupted tooth enclosed inside the cyst sac, with the cyst attached at the cemento-enamel junction.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "34",
+      "images": [
+        "op1-p016.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P017",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "The structures seen in the wall of this cyst (shown in the histology) are:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cholesterol clefts"
+        },
+        {
+          "key": "B",
+          "text": "Dystrophic calcification"
+        },
+        {
+          "key": "C",
+          "text": "Russel bodies"
+        },
+        {
+          "key": "D",
+          "text": "Rushton bodies"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Cholesterol clefts are the needle-shaped empty spaces left after cholesterol crystals dissolve during tissue processing; they are often surrounded by multinucleated giant cells. They are commonly found in the wall and lumen of inflammatory (periapical) cysts.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "35",
+      "images": [
+        "op1-p017.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P018",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Eruption cyst"
+        },
+        {
+          "key": "B",
+          "text": "Epstein pearls"
+        },
+        {
+          "key": "C",
+          "text": "Periapical cyst"
+        },
+        {
+          "key": "D",
+          "text": "Dermoid cyst"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Dermoid cyst: a developmental cyst in the midline of the floor of the mouth that can cause a swelling under the chin. It is lined by keratinized stratified squamous epithelium and has skin appendages (hair follicles, sebaceous glands) in the wall; without appendages it is called an epidermoid cyst.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "37",
+      "images": [
+        "op1-p018.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P019",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown clinically and histologically.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nasopalatine tract cyst"
+        },
+        {
+          "key": "B",
+          "text": "Branchial cleft cyst"
+        },
+        {
+          "key": "C",
+          "text": "Thyroglossal tract cyst"
+        },
+        {
+          "key": "D",
+          "text": "Nasolabial cyst"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Thyroglossal tract cyst: a midline neck swelling that moves upward on swallowing and tongue protrusion. It arises from remnants of the thyroglossal duct, and the cyst wall may contain thyroid follicles (as in the histology).",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "38",
+      "images": [
+        "op1-p019.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P020",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown in the radiograph and histology.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Gorlin's cyst"
+        },
+        {
+          "key": "B",
+          "text": "Epidermoid cyst"
+        },
+        {
+          "key": "C",
+          "text": "Dermoid cyst"
+        },
+        {
+          "key": "D",
+          "text": "Odontogenic keratocyst"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Odontogenic keratocyst: radiograph shows a radiolucency (often multilocular, posterior mandible) and histology shows a corrugated parakeratinized lining with a palisaded basal layer. Multiple keratocysts suggest Gorlin (nevoid basal cell carcinoma) syndrome.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "40",
+      "images": [
+        "op1-p020.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P021",
+      "course_id": "op1",
+      "chapter": "Cysts of the oral and paraoral region",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown clinically and histologically.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dentigerous cyst"
+        },
+        {
+          "key": "B",
+          "text": "Gorlin's cyst"
+        },
+        {
+          "key": "C",
+          "text": "Glandular odontogenic cyst"
+        },
+        {
+          "key": "D",
+          "text": "Dermoid cyst"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Glandular odontogenic cyst: a rare developmental cyst, usually in the anterior mandible, lined by squamous epithelium with surface cuboidal/columnar cells, mucous (goblet) cells and gland-like spaces or microcysts in the lining.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "41",
+      "images": [
+        "op1-p021.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P022",
+      "course_id": "op1",
+      "chapter": "Odontogenic tumors",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown in the histology, gross specimen and radiograph.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Adenomatoid odontogenic tumor"
+        },
+        {
+          "key": "B",
+          "text": "Calcifying epithelial odontogenic tumor"
+        },
+        {
+          "key": "C",
+          "text": "Ameloblastoma"
+        },
+        {
+          "key": "D",
+          "text": "Ameloblastic fibroma"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Adenomatoid odontogenic tumor: histology shows duct-like (gland-like) structures and rosettes of spindle/cuboidal cells; the gross specimen is a well-encapsulated mass around an unerupted tooth crown. It typically occurs in young females in the anterior maxilla, around an impacted canine.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "2, 64, 66",
+      "images": [
+        "op1-p022.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P023",
+      "course_id": "op1",
+      "chapter": "Odontogenic tumors",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown in the radiographs and histology.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Odontome"
+        },
+        {
+          "key": "B",
+          "text": "Ameloblastoma"
+        },
+        {
+          "key": "C",
+          "text": "Cementoblastoma"
+        },
+        {
+          "key": "D",
+          "text": "Ameloblastic fibroma"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Odontome: the radiographs show multiple small tooth-like radiopacities within a lesion, and the histology shows enamel, dentin and pulp tissue arranged like small teeth. Odontomes are hamartomas and the most common 'odontogenic tumor'.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "5, 60",
+      "images": [
+        "op1-p023.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P024",
+      "course_id": "op1",
+      "chapter": "Odontogenic tumors",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown in the radiograph and histology.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ameloblastoma"
+        },
+        {
+          "key": "B",
+          "text": "Odontogenic keratocyst"
+        },
+        {
+          "key": "C",
+          "text": "Calcifying odontogenic cyst"
+        },
+        {
+          "key": "D",
+          "text": "Odontogenic myxoma"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Odontogenic myxoma: the radiograph shows a multilocular 'soap-bubble' or 'honeycomb' radiolucency in the mandible, and the histology shows loose myxoid stroma with scattered stellate and spindle cells. It has no capsule, so it recurs easily.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "6, 57",
+      "images": [
+        "op1-p024.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P025",
+      "course_id": "op1",
+      "chapter": "Odontogenic tumors",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown in the histology.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ameloblastic fibroma"
+        },
+        {
+          "key": "B",
+          "text": "Calcifying odontogenic cyst"
+        },
+        {
+          "key": "C",
+          "text": "Ameloblastoma"
+        },
+        {
+          "key": "D",
+          "text": "Compound odontome"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Ameloblastic fibroma: thin strands and cords of odontogenic epithelium (two cells thick) in a primitive, cellular, dental-papilla-like connective tissue. It is a mixed odontogenic tumor of children and young adults, usually in the posterior mandible.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "10, 54",
+      "images": [
+        "op1-p025.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P026",
+      "course_id": "op1",
+      "chapter": "Odontogenic tumors",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown in the histology, radiograph and clinical picture.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Adenomatoid odontogenic tumor"
+        },
+        {
+          "key": "B",
+          "text": "Odontome"
+        },
+        {
+          "key": "C",
+          "text": "Ameloblastoma"
+        },
+        {
+          "key": "D",
+          "text": "Calcifying epithelial odontogenic tumor"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Ameloblastoma: histology shows follicles of odontogenic epithelium with peripheral tall columnar ameloblast-like cells showing reverse polarity and a central stellate-reticulum-like area. Clinically it causes a slow, painless expansion of the jaw, usually the posterior mandible.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "14, 59",
+      "images": [
+        "op1-p026.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P027",
+      "course_id": "op1",
+      "chapter": "Odontogenic tumors",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown in the radiograph.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ameloblastic fibro-odontome"
+        },
+        {
+          "key": "B",
+          "text": "Compound odontome"
+        },
+        {
+          "key": "C",
+          "text": "Calcifying odontogenic cyst"
+        },
+        {
+          "key": "D",
+          "text": "Complex odontome"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compound odontome: the radiograph shows a cluster of many small, tooth-like structures (denticles), often between the roots or blocking eruption of a tooth. A complex odontome would appear as one irregular radiopaque mass without tooth shapes.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "15, 52",
+      "images": [
+        "op1-p027.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P028",
+      "course_id": "op1",
+      "chapter": "Odontogenic tumors",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown in the histology and radiograph.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Odontome"
+        },
+        {
+          "key": "B",
+          "text": "Adenomatoid odontogenic tumor"
+        },
+        {
+          "key": "C",
+          "text": "Ameloblastoma"
+        },
+        {
+          "key": "D",
+          "text": "Calcifying epithelial odontogenic tumor"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Ameloblastoma: islands of odontogenic epithelium with peripheral palisaded columnar cells (reverse polarity) and stellate reticulum-like centres; the radiograph shows a multilocular radiolucency. Watch for the AOT and CEOT distractors: AOT shows duct-like structures; CEOT shows sheets of polyhedral cells with amyloid and calcifications.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "16, 65",
+      "images": [
+        "op1-p028.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P029",
+      "course_id": "op1",
+      "chapter": "Odontogenic tumors",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown in the histology, gross specimen and radiograph.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Calcifying epithelial odontogenic tumor"
+        },
+        {
+          "key": "B",
+          "text": "Ameloblastic fibroma"
+        },
+        {
+          "key": "C",
+          "text": "Ameloblastoma"
+        },
+        {
+          "key": "D",
+          "text": "Adenomatoid odontogenic tumor"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Adenomatoid odontogenic tumor: duct-like structures in the histology, a capsulated mass around a tooth crown, and a radiolucency around an unerupted canine. It is the 'two-thirds' tumor: two-thirds in the maxilla, in females, in young patients and associated with an unerupted canine.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "17, 62",
+      "images": [
+        "op1-p029.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P030",
+      "course_id": "op1",
+      "chapter": "Odontogenic tumors",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown in the radiograph and histology.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cementoblastoma"
+        },
+        {
+          "key": "B",
+          "text": "Acute suppurative osteomyelitis"
+        },
+        {
+          "key": "C",
+          "text": "Odontome"
+        },
+        {
+          "key": "D",
+          "text": "Chronic osteomyelitis with proliferative periostitis"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Cementoblastoma: a radiopaque mass fused to the root of a tooth (usually a mandibular first molar) surrounded by a radiolucent rim; the histology shows sheets of cementum-like tissue with prominent reversal lines and plump cementoblasts.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "18, 46",
+      "images": [
+        "op1-p030.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P031",
+      "course_id": "op1",
+      "chapter": "Odontogenic tumors",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown in the radiograph.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Odontogenic keratocyst"
+        },
+        {
+          "key": "B",
+          "text": "Ameloblastoma"
+        },
+        {
+          "key": "C",
+          "text": "Dentigerous cyst"
+        },
+        {
+          "key": "D",
+          "text": "Adenomatoid odontogenic tumor"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Adenomatoid odontogenic tumor: a well-defined radiolucency around the crown of an unerupted maxillary canine, which can extend beyond the cemento-enamel junction and often contains small 'snowflake' calcifications. A dentigerous cyst attaches only at the CEJ.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "21, 58",
+      "images": [
+        "op1-p031.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P032",
+      "course_id": "op1",
+      "chapter": "Odontogenic tumors",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown in the radiographs.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Compound odontome"
+        },
+        {
+          "key": "B",
+          "text": "Ameloblastic fibroma"
+        },
+        {
+          "key": "C",
+          "text": "Complex odontome"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Compound odontome: multiple small tooth-like radiopacities grouped together. Ameloblastic fibroma is a radiolucent lesion; a complex odontome is a single amorphous radiopaque mass.",
+      "answer_status": "corrected",
+      "times_seen": 1,
+      "source_pages": "23, 39",
+      "images": [
+        "op1-p032.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P033",
+      "course_id": "op1",
+      "chapter": "Odontogenic tumors",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown in the radiographs and histology.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Complex odontome"
+        },
+        {
+          "key": "B",
+          "text": "Compound odontome"
+        },
+        {
+          "key": "C",
+          "text": "Ameloblastic fibroma"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compound odontome: radiographs show many small tooth-like structures, and the histology shows enamel matrix, dentin and pulp arranged as small teeth. A complex odontome has the same tissues but in a disorganized mass.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "28",
+      "images": [
+        "op1-p033.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P034",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown in the histology.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Acute pulpitis"
+        },
+        {
+          "key": "B",
+          "text": "Gingival polyp"
+        },
+        {
+          "key": "C",
+          "text": "Chronic hyperplastic pulpitis"
+        },
+        {
+          "key": "D",
+          "text": "Chronic ulcerative pulpitis"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Chronic ulcerative pulpitis: the exposed pulp surface is ulcerated and covered by necrotic debris, with a zone of granulation tissue and chronic inflammatory cells beneath. Chronic hyperplastic pulpitis (pulp polyp) would show a mass of granulation tissue protruding out of the cavity instead.",
+      "answer_status": "confirmed",
+      "times_seen": 1,
+      "source_pages": "12, 44",
+      "images": [
+        "op1-p034.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P035",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the condition shown.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cavernous sinus thrombosis"
+        },
+        {
+          "key": "B",
+          "text": "Ludwig's angina"
+        },
+        {
+          "key": "C",
+          "text": "Periapical cyst"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Cavernous sinus thrombosis: periorbital swelling, proptosis (exophthalmos) and chemosis. It follows spread of infection from the 'dangerous area' of the face or from maxillary teeth through the valveless emissary veins. It can be fatal, so it is a dental emergency.",
+      "answer_status": "verified",
+      "times_seen": 1,
+      "source_pages": "29",
+      "images": [
+        "op1-p035.jpg"
+      ]
+    },
+    {
+      "id": "OP1-P036",
+      "course_id": "op1",
+      "chapter": "Pulp and periapical diseases",
+      "lecture": "",
+      "category": "past_paper",
+      "exam_label": "Final practical exam",
+      "stem": "Identify the lesion shown clinically, radiographically and histologically.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pulp abscess"
+        },
+        {
+          "key": "B",
+          "text": "Chronic ulcerative pulpitis"
+        },
+        {
+          "key": "C",
+          "text": "Acute pulpitis"
+        },
+        {
+          "key": "D",
+          "text": "Chronic hyperplastic pulpitis (pulp polyp)"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Chronic hyperplastic pulpitis (pulp polyp): a red, fleshy mass of granulation tissue grows out of a large carious cavity, usually in a deciduous or young permanent molar with a wide apical foramen and good blood supply. It may be covered by stratified squamous epithelium.",
+      "answer_status": "corrected",
+      "times_seen": 1,
+      "source_pages": "36, 43",
+      "images": [
+        "op1-p036.jpg"
+      ]
+    }
+  ]
+}
