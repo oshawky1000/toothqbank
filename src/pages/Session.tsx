@@ -316,7 +316,9 @@ function Runner({ data }: { data: LoadedSession }) {
       ) : (
         <article className="question">
           {question.times_seen >= 2 && <span className="badge seen-badge">Seen in {question.times_seen} papers</span>}
-          <QuestionImages key={question.id} courseId={session.course_id} images={question.images} />
+          {/* Keys must differ from ReportForm's below: two children with the same key
+              make React leave the previous question's images on screen. */}
+          <QuestionImages key={`images-${question.id}`} courseId={session.course_id} images={question.images} />
           <p className="stem">{question.stem}</p>
 
           <div className="options" role="list">
