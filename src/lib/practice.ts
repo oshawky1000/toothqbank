@@ -7,13 +7,20 @@ import type { Category } from './catalog.ts'
 
 export type Order = 'random' | 'most_repeated'
 export type Mode = 'tutor' | 'timed'
+export type Filter = 'all' | 'unanswered' | 'incorrect'
 
 export type SessionSettings = {
   chapters: number[]
   sections: Category[]
+  filter: Filter
   order: Order
   count: number
+  /** Timed sessions only: seconds used so far, so the timer can resume. */
+  elapsed_seconds?: number
 }
+
+/** A question the session builder can pick (no question content). */
+export type PoolQuestion = { id: string; chapter_id: number; category: Category; times_seen: number }
 
 export type Option = { key: string; text: string }
 
@@ -41,6 +48,7 @@ export type Session = {
   course_id: string
   mode: Mode
   settings: SessionSettings
+  seconds_per_question: number | null
   current_position: number
   finished_at: string | null
 }
@@ -56,40 +64,58 @@ function shuffle<T>(list: T[]): T[] {
   return copy
 }
 
-/** Picks the questions and saves a new session. Returns its id, or an error message. */
-export async function createSession(
-  courseId: string,
-  settings: SessionSettings,
-): Promise<{ id: string } | { error: string }> {
-  // Note: Supabase returns at most 1000 rows per request, enough for one course for now.
-  const { data: pool, error: poolError } = await supabase
-    .from('questions')
-    .select('id, times_seen')
-    .eq('course_id', courseId)
-    .in('chapter_id', settings.chapters)
-    .in('category', settings.sections)
-  if (poolError) return { error: FAILED }
-  if (!pool || pool.length === 0) {
-    return { error: 'No questions match your choices. If this course was just unlocked, refresh the page.' }
-  }
+// Supabase returns at most 1000 rows per request, so read in pages.
+const PAGE = 1000
 
-  let picked = shuffle(pool)
-  if (settings.order === 'most_repeated') {
+/** Every question of a course the student can practise: ids and labels only. */
+export async function loadPool(courseId: string): Promise<PoolQuestion[]> {
+  const pool: PoolQuestion[] = []
+  for (let from = 0; ; from += PAGE) {
+    const { data, error } = await supabase
+      .from('questions')
+      .select('id, chapter_id, category, times_seen')
+      .eq('course_id', courseId)
+      .order('id')
+      .range(from, from + PAGE - 1)
+    if (error) throw error
+    pool.push(...((data ?? []) as PoolQuestion[]))
+    if (!data || data.length < PAGE) return pool
+  }
+}
+
+/** Puts the chosen questions in order and keeps the first `count`. */
+export function pickQuestions(candidates: PoolQuestion[], order: Order, count: number): PoolQuestion[] {
+  let picked = shuffle(candidates)
+  if (order === 'most_repeated') {
     // Sorting keeps the shuffled order among questions seen the same number of times.
     picked = picked.sort((a, b) => b.times_seen - a.times_seen)
   }
-  picked = picked.slice(0, settings.count)
+  return picked.slice(0, count)
+}
 
+/** Saves a new session with the picked questions. Returns its id, or an error message. */
+export async function createSession(
+  courseId: string,
+  mode: Mode,
+  secondsPerQuestion: number | null,
+  settings: SessionSettings,
+  questionIds: string[],
+): Promise<{ id: string } | { error: string }> {
   const { data: session, error: sessionError } = await supabase
     .from('practice_sessions')
-    .insert({ course_id: courseId, mode: 'tutor', settings: { ...settings, count: picked.length } })
+    .insert({
+      course_id: courseId,
+      mode,
+      seconds_per_question: mode === 'timed' ? secondsPerQuestion : null,
+      settings: { ...settings, count: questionIds.length, ...(mode === 'timed' ? { elapsed_seconds: 0 } : {}) },
+    })
     .select('id')
     .single()
   if (sessionError || !session) return { error: FAILED }
 
   const { error: itemsError } = await supabase
     .from('session_items')
-    .insert(picked.map((q, position) => ({ session_id: session.id, position, question_id: q.id })))
+    .insert(questionIds.map((question_id, position) => ({ session_id: session.id, position, question_id })))
   if (itemsError) {
     await supabase.from('practice_sessions').delete().eq('id', session.id)
     return { error: FAILED }
@@ -104,7 +130,7 @@ export async function loadSession(sessionId: string): Promise<LoadedSession | nu
   const [sessionResult, itemsResult] = await Promise.all([
     supabase
       .from('practice_sessions')
-      .select('id, course_id, mode, settings, current_position, finished_at')
+      .select('id, course_id, mode, settings, seconds_per_question, current_position, finished_at')
       .eq('id', sessionId)
       .maybeSingle(),
     supabase
@@ -157,15 +183,60 @@ export async function saveFlag(sessionId: string, position: number, flagged: boo
   return !error
 }
 
-/** Remembers where the student is, so the session can be resumed later. */
-export function savePosition(sessionId: string, position: number): void {
-  void supabase.from('practice_sessions').update({ current_position: position }).eq('id', sessionId).then()
+/** Remembers where the student is (and, for timed sessions, the time used). */
+export function saveProgress(sessionId: string, patch: { current_position?: number; settings?: SessionSettings }) {
+  return supabase.from('practice_sessions').update(patch).eq('id', sessionId).then(({ error }) => !error)
 }
 
-export async function finishSession(sessionId: string): Promise<string | null> {
+export async function finishSession(sessionId: string, settings?: SessionSettings): Promise<string | null> {
   const finished_at = new Date().toISOString()
-  const { error } = await supabase.from('practice_sessions').update({ finished_at }).eq('id', sessionId)
+  const { error } = await supabase
+    .from('practice_sessions')
+    .update(settings ? { finished_at, settings } : { finished_at })
+    .eq('id', sessionId)
   return error ? null : finished_at
+}
+
+export async function deleteSession(sessionId: string): Promise<boolean> {
+  const { error } = await supabase.from('practice_sessions').delete().eq('id', sessionId)
+  return !error
+}
+
+export type SessionSummary = {
+  id: string
+  mode: Mode
+  created_at: string
+  finished_at: string | null
+  total: number
+  answered: number
+  correct: number
+}
+
+/** The student's recent sessions in a course, newest first. */
+export async function loadRecentSessions(courseId: string): Promise<SessionSummary[]> {
+  const { data, error } = await supabase
+    .from('practice_sessions')
+    .select('id, mode, created_at, finished_at, session_items(chosen, is_correct)')
+    .eq('course_id', courseId)
+    .order('created_at', { ascending: false })
+    .limit(20)
+  if (error) throw error
+  type Row = {
+    id: string
+    mode: Mode
+    created_at: string
+    finished_at: string | null
+    session_items: { chosen: string | null; is_correct: boolean | null }[]
+  }
+  return ((data ?? []) as Row[]).map((row) => ({
+    id: row.id,
+    mode: row.mode,
+    created_at: row.created_at,
+    finished_at: row.finished_at,
+    total: row.session_items.length,
+    answered: row.session_items.filter((i) => i.chosen !== null).length,
+    correct: row.session_items.filter((i) => i.is_correct === true).length,
+  }))
 }
 
 export const REPORT_REASONS = [

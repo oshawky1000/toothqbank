@@ -1,12 +1,33 @@
-import { useState, type FormEvent } from 'react'
+import { useEffect, useState, type FormEvent } from 'react'
 import { Link, Navigate, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { useAuth } from '../auth/AuthContext.tsx'
 import LoadProblem from '../components/LoadProblem.tsx'
 import { courseAccess, SECTIONS, useCatalog, type Category, type Course } from '../lib/catalog.ts'
-import { createSession, type Order } from '../lib/practice.ts'
+import {
+  createSession,
+  loadPool,
+  pickQuestions,
+  type Filter,
+  type Mode,
+  type Order,
+  type PoolQuestion,
+} from '../lib/practice.ts'
+import { loadHistory, type History } from '../lib/progress.ts'
 import NotFound from './NotFound.tsx'
 
 const COUNT_PRESETS = [10, 20, 40]
+// Timed mode: 1 minute per question by default.
+const TIME_OPTIONS = [
+  { seconds: 30, label: '30 sec' },
+  { seconds: 60, label: '1 min' },
+  { seconds: 90, label: '1.5 min' },
+  { seconds: 120, label: '2 min' },
+]
+const FILTERS: { value: Filter; label: string }[] = [
+  { value: 'all', label: 'All questions' },
+  { value: 'unanswered', label: 'Unanswered' },
+  { value: 'incorrect', label: 'Incorrect only' },
+]
 
 export default function Practice() {
   const { courseId = '' } = useParams()
@@ -21,14 +42,46 @@ export default function Practice() {
   if (courseAccess(course, profile, catalog.unlockedIds) !== 'unlocked') {
     return <Navigate to={`/course/${course.id}`} replace />
   }
-  return <Builder course={course} />
+  return <BuilderLoader course={course} />
 }
 
-function Builder({ course }: { course: Course }) {
+/** Loads the course's questions (ids only) and the student's past answers. */
+function BuilderLoader({ course }: { course: Course }) {
+  const [data, setData] = useState<{ pool: PoolQuestion[]; history: History } | null>(null)
+  const [error, setError] = useState(false)
+  const [attempt, setAttempt] = useState(0)
+
+  useEffect(() => {
+    let cancelled = false
+    setError(false)
+    Promise.all([loadPool(course.id), loadHistory(course.id)])
+      .then(([pool, history]) => {
+        if (!cancelled) setData({ pool, history })
+      })
+      .catch(() => {
+        if (!cancelled) setError(true)
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [course.id, attempt])
+
+  if (error) return <LoadProblem what="the questions" onRetry={() => setAttempt((n) => n + 1)} />
+  if (!data) return <p className="muted">Loading…</p>
+  return <Builder course={course} pool={data.pool} history={data.history} />
+}
+
+function matchesFilter(q: PoolQuestion, filter: Filter, history: History): boolean {
+  if (filter === 'unanswered') return !history.has(q.id)
+  if (filter === 'incorrect') return history.get(q.id)?.is_correct === false
+  return true
+}
+
+function Builder({ course, pool, history }: { course: Course; pool: PoolQuestion[]; history: History }) {
   const navigate = useNavigate()
   const [searchParams] = useSearchParams()
-  const chapters = course.chapters.filter((ch) => ch.total > 0)
-  const sections = SECTIONS.filter((s) => course.sections[s.category] > 0)
+  const chapters = course.chapters.filter((ch) => pool.some((q) => q.chapter_id === ch.id))
+  const sections = SECTIONS.filter((s) => pool.some((q) => q.category === s.category))
 
   // A link from a chapter page preselects that chapter.
   const preselected = Number(searchParams.get('chapter'))
@@ -36,17 +89,30 @@ function Builder({ course }: { course: Course }) {
     chapters.some((ch) => ch.id === preselected) ? [preselected] : chapters.map((ch) => ch.id),
   )
   const [chosenSections, setChosenSections] = useState<Category[]>(() => sections.map((s) => s.category))
+  const [filter, setFilter] = useState<Filter>('all')
   const [order, setOrder] = useState<Order>('random')
   const [count, setCount] = useState(20)
   const [typedCount, setTypedCount] = useState('')
+  const [mode, setMode] = useState<Mode>('tutor')
+  const [secondsPerQuestion, setSecondsPerQuestion] = useState(60)
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
-  const available = chapters
-    .filter((ch) => chosenChapters.includes(ch.id))
-    .reduce((sum, ch) => sum + chosenSections.reduce((n, cat) => n + ch.sections[cat], 0), 0)
+  const candidates = pool.filter(
+    (q) =>
+      chosenChapters.includes(q.chapter_id) &&
+      chosenSections.includes(q.category) &&
+      matchesFilter(q, filter, history),
+  )
+  const available = candidates.length
   const finalCount = Math.min(count, available)
   const allChapters = chosenChapters.length === chapters.length
+
+  // How many questions each filter would give with the current chapters and sections.
+  const filterCount = (f: Filter) =>
+    pool.filter(
+      (q) => chosenChapters.includes(q.chapter_id) && chosenSections.includes(q.category) && matchesFilter(q, f, history),
+    ).length
 
   function toggle<T>(list: T[], value: T, on: boolean): T[] {
     return on ? [...list, value] : list.filter((v) => v !== value)
@@ -57,12 +123,14 @@ function Builder({ course }: { course: Course }) {
     if (finalCount < 1) return
     setBusy(true)
     setError(null)
-    const result = await createSession(course.id, {
-      chapters: chosenChapters,
-      sections: chosenSections,
-      order,
-      count: finalCount,
-    })
+    const picked = pickQuestions(candidates, order, finalCount)
+    const result = await createSession(
+      course.id,
+      mode,
+      secondsPerQuestion,
+      { chapters: chosenChapters, sections: chosenSections, filter, order, count: picked.length },
+      picked.map((q) => q.id),
+    )
     if ('error' in result) {
       setError(result.error)
       setBusy(false)
@@ -70,6 +138,8 @@ function Builder({ course }: { course: Course }) {
     }
     navigate(`/session/${result.id}`)
   }
+
+  const minutes = Math.ceil((finalCount * secondsPerQuestion) / 60)
 
   return (
     <section className="practice-page">
@@ -98,7 +168,7 @@ function Builder({ course }: { course: Course }) {
                   onChange={(e) => setChosenChapters((list) => toggle(list, ch.id, e.target.checked))}
                 />
                 <span>{ch.name}</span>
-                <span className="muted small">{ch.total}</span>
+                <span className="muted small">{pool.filter((q) => q.chapter_id === ch.id).length}</span>
               </label>
             ))}
           </div>
@@ -115,7 +185,20 @@ function Builder({ course }: { course: Course }) {
                   onChange={(e) => setChosenSections((list) => toggle(list, s.category, e.target.checked))}
                 />
                 <span>{s.label}</span>
-                <span className="muted small">{course.sections[s.category]}</span>
+                <span className="muted small">{pool.filter((q) => q.category === s.category).length}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+
+        <fieldset className="card builder-group">
+          <legend>Questions</legend>
+          <div className="checkbox-list">
+            {FILTERS.map((f) => (
+              <label key={f.value} className="checkbox-row">
+                <input type="radio" name="filter" checked={filter === f.value} onChange={() => setFilter(f.value)} />
+                <span>{f.label}</span>
+                <span className="muted small">{filterCount(f.value)}</span>
               </label>
             ))}
           </div>
@@ -191,20 +274,39 @@ function Builder({ course }: { course: Course }) {
           <legend>Mode</legend>
           <div className="checkbox-list">
             <label className="checkbox-row">
-              <input type="radio" name="mode" checked readOnly />
+              <input type="radio" name="mode" checked={mode === 'tutor'} onChange={() => setMode('tutor')} />
               <span>
                 <strong>Tutor</strong>
                 <span className="block muted small">See the answer and explanation after each question.</span>
               </span>
             </label>
-            <label className="checkbox-row disabled">
-              <input type="radio" name="mode" disabled />
+            <label className="checkbox-row">
+              <input type="radio" name="mode" checked={mode === 'timed'} onChange={() => setMode('timed')} />
               <span>
                 <strong>Timed</strong>
-                <span className="block muted small">Coming soon.</span>
+                <span className="block muted small">Like an exam: answers are shown at the end.</span>
               </span>
             </label>
           </div>
+          {mode === 'timed' && (
+            <div className="time-options">
+              <span className="field-label">Time per question</span>
+              <div className="chip-row">
+                {TIME_OPTIONS.map((t) => (
+                  <button
+                    key={t.seconds}
+                    type="button"
+                    className={secondsPerQuestion === t.seconds ? 'chip active' : 'chip'}
+                    aria-pressed={secondsPerQuestion === t.seconds}
+                    onClick={() => setSecondsPerQuestion(t.seconds)}
+                  >
+                    {t.label}
+                  </button>
+                ))}
+              </div>
+              {finalCount > 0 && <p className="muted small">Total time: {minutes} min</p>}
+            </div>
+          )}
         </fieldset>
 
         {error && (
@@ -217,7 +319,9 @@ function Builder({ course }: { course: Course }) {
           {busy
             ? 'Starting…'
             : finalCount < 1
-              ? 'Choose at least one chapter and section'
+              ? filter === 'all'
+                ? 'Choose at least one chapter and section'
+                : 'No questions match these choices'
               : `Start ${finalCount} question${finalCount === 1 ? '' : 's'}`}
         </button>
       </form>

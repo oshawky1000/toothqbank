@@ -9,6 +9,7 @@ import {
   SectionList,
 } from '../components/CourseParts.tsx'
 import LoadProblem from '../components/LoadProblem.tsx'
+import RecentSessions from '../components/RecentSessions.tsx'
 import { chapterCount, courseAccess, questionCount, semesterLabel, useCatalog } from '../lib/catalog.ts'
 import { useCourseProgress } from '../lib/progress.ts'
 import NotFound from './NotFound.tsx'
@@ -51,11 +52,14 @@ export default function Course() {
         <div className="stack">
           <SectionList sections={course.sections} />
           {access === 'unlocked' && (
-            <StartPractice
-              to={`/course/${course.id}/practice`}
-              label="Start a practice session"
-              text="Choose chapters, sections and how many questions, then practise with answers and explanations."
-            />
+            <>
+              <StartPractice
+                to={`/course/${course.id}/practice`}
+                label="Start a practice session"
+                text="Choose chapters, sections, how many questions, and tutor or timed mode."
+              />
+              <RecentSessions courseId={course.id} />
+            </>
           )}
         </div>
       )}
