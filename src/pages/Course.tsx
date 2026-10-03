@@ -4,8 +4,8 @@ import { AccessBadge } from '../components/CourseCard.tsx'
 import {
   ComingSoonBox,
   LockedBox,
-  PracticeSoon,
   ProgressLine,
+  StartPractice,
   SectionList,
 } from '../components/CourseParts.tsx'
 import LoadProblem from '../components/LoadProblem.tsx'
@@ -50,7 +50,13 @@ export default function Course() {
       {access !== 'coming-soon' && (
         <div className="stack">
           <SectionList sections={course.sections} />
-          {access === 'unlocked' && <PracticeSoon />}
+          {access === 'unlocked' && (
+            <StartPractice
+              to={`/course/${course.id}/practice`}
+              label="Start a practice session"
+              text="Choose chapters, sections and how many questions, then practise with answers and explanations."
+            />
+          )}
         </div>
       )}
 

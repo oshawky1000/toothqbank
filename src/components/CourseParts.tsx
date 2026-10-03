@@ -1,5 +1,6 @@
 // Small pieces shared by the course page and the chapter page.
 
+import { Link } from 'react-router-dom'
 import { config } from '../config.ts'
 import { SECTIONS, questionCount, type SectionCounts } from '../lib/catalog.ts'
 import { percent, type ChapterProgress } from '../lib/progress.ts'
@@ -55,14 +56,14 @@ export function ComingSoonBox({ what }: { what: string }) {
   )
 }
 
-export function PracticeSoon() {
+export function StartPractice({ to, label, text }: { to: string; label: string; text: string }) {
   return (
     <div className="card notice">
       <h2>Practice</h2>
-      <p>
-        Practice sessions are coming soon. You will choose chapters, sections and a mode, then answer
-        questions with explanations.
-      </p>
+      <p>{text}</p>
+      <Link to={to} className="button button-block">
+        {label}
+      </Link>
     </div>
   )
 }
