@@ -14,6 +14,7 @@ export const config = {
   // Messages shown wherever a student needs to contact us.
   messages: {
     unlockCourse: 'To unlock this course, contact a ToothQBank admin.',
+    unlockSignedOut: 'Create an account or log in first. Then contact a ToothQBank admin to unlock this course.',
     pendingAccount: 'Your account is waiting for approval. Contact a ToothQBank admin to activate it.',
     rejectedOrRevoked: 'Your account does not have access. Contact a ToothQBank admin for help.',
     forgotPassword: 'Contact a ToothQBank admin to reset your password.',
