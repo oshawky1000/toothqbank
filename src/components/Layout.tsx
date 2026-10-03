@@ -19,7 +19,13 @@ export default function Layout() {
           <nav className="topbar-actions">
             {loading ? null : profile ? (
               <>
-                <span className="topbar-user">{profile.full_name}</span>
+                {profile.is_admin ? (
+                  <Link to="/admin" className="topbar-link">
+                    Admin
+                  </Link>
+                ) : (
+                  <span className="topbar-user">{profile.full_name}</span>
+                )}
                 <button type="button" className="button button-small button-secondary" onClick={signOut}>
                   Log out
                 </button>
