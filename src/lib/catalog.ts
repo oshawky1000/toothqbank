@@ -24,7 +24,10 @@ export type Chapter = {
   name: string
   position: number
   total: number
+  /** Written questions (no images) per section. */
   sections: SectionCounts
+  /** Practical questions: questions with images, counted apart from the sections. */
+  practical: number
 }
 
 export type Course = {
@@ -33,7 +36,10 @@ export type Course = {
   name: string
   position: number
   total: number
+  /** Written questions (no images) per section. */
   sections: SectionCounts
+  /** Practical questions: questions with images, counted apart from the sections. */
+  practical: number
   chapters: Chapter[]
 }
 
@@ -54,7 +60,13 @@ type CatalogState = {
   retry: () => void
 }
 
-type CountRow = { course_id: string; chapter_id: number; category: Category; question_count: number }
+type CountRow = {
+  course_id: string
+  chapter_id: number
+  category: Category
+  has_images?: boolean
+  question_count: number
+}
 
 function emptySections(): SectionCounts {
   return { past_paper: 0, quiz_midterm: 0, chapter: 0 }
@@ -77,28 +89,25 @@ async function loadCatalog(userId: string | null): Promise<Catalog> {
     ...c,
     total: 0,
     sections: emptySections(),
+    practical: 0,
     chapters: [],
   }))
   const courseById = new Map(courseList.map((c) => [c.id, c]))
 
   const chapterById = new Map<number, Chapter>()
   for (const ch of chapters.data ?? []) {
-    const chapter: Chapter = { ...ch, total: 0, sections: emptySections() }
+    const chapter: Chapter = { ...ch, total: 0, sections: emptySections(), practical: 0 }
     chapterById.set(chapter.id, chapter)
     courseById.get(chapter.course_id)?.chapters.push(chapter)
   }
 
   for (const row of (counts.data ?? []) as CountRow[]) {
     const n = Number(row.question_count)
-    const course = courseById.get(row.course_id)
-    if (course) {
-      course.total += n
-      course.sections[row.category] += n
-    }
-    const chapter = chapterById.get(row.chapter_id)
-    if (chapter) {
-      chapter.total += n
-      chapter.sections[row.category] += n
+    for (const target of [courseById.get(row.course_id), chapterById.get(row.chapter_id)]) {
+      if (!target) continue
+      target.total += n
+      if (row.has_images) target.practical += n
+      else target.sections[row.category] += n
     }
   }
 

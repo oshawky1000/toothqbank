@@ -48,11 +48,14 @@ export default function Chapter() {
               <ProgressLine total={chapter.total} progress={progress.get(chapter.id) ?? { answered: 0, correct: 0 }} />
             </div>
           )}
-          <SectionList sections={chapter.sections} />
+          <SectionList sections={chapter.sections} practical={chapter.practical} />
           <StartPractice
             to={`/course/${course.id}/practice?chapter=${chapter.id}`}
             label="Practise this chapter"
             text="Start a session with this chapter selected. You can add more chapters before starting."
+            practicalTo={
+              chapter.practical > 0 ? `/course/${course.id}/practice?chapter=${chapter.id}&type=practical` : undefined
+            }
           />
         </div>
       )}

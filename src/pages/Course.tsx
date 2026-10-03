@@ -50,13 +50,14 @@ export default function Course() {
 
       {access !== 'coming-soon' && (
         <div className="stack">
-          <SectionList sections={course.sections} />
+          <SectionList sections={course.sections} practical={course.practical} />
           {access === 'unlocked' && (
             <>
               <StartPractice
                 to={`/course/${course.id}/practice`}
                 label="Start a practice session"
                 text="Choose chapters, sections, how many questions, and tutor or timed mode."
+                practicalTo={course.practical > 0 ? `/course/${course.id}/practice?type=practical` : undefined}
               />
               <RecentSessions courseId={course.id} />
             </>
