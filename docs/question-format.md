@@ -30,7 +30,16 @@ One JSON file per course batch, e.g. `gm1-pilot.json`.
 | `answer_status` | `confirmed` \| `verified` \| `corrected` | Internal only, for quality tracking. Not shown to students. |
 | `times_seen` | integer | How many times this question appeared across the source papers. Used for the "Seen in X papers" badge and the "most repeated first" sort. |
 | `source_pages` | string | Internal reference to the source PDF. Not shown to students. |
-| `images` | array of file names | Images for the stem (empty for now; Radiology will use this). |
+| `images` | array of file names | Images shown above the stem, e.g. `["op1-slide-03.jpg"]`. Empty list (or left out) for no images. See "Images" below. |
+
+## Images
+- List each image by its **file name only** (no folder), e.g. `"images": ["op1-slide-03.jpg"]`.
+- Allowed names: letters, numbers, spaces, dots, dashes, underscores and brackets, ending in `.jpg`, `.jpeg`, `.png`, `.webp` or `.gif`. No Arabic letters and no `/`.
+- File names must be unique **within a course**: two questions that show the same picture can list the same file name, and it is uploaded once.
+- Import the JSON file and its image files **together** in Admin > Import (choose them all at once, or add missing ones with "Add more files"). Capital letters in the file name do not matter when matching (`Slide1.JPG` matches `slide1.jpg`).
+- Images already uploaded for that course do not have to be chosen again when you re-import a fixed JSON file. Choosing an image with the same name replaces the old one.
+- If an image named in the file is neither chosen nor already on the site, the import stops and lists the question id and file name. Nothing is saved.
+- Large photos are shrunk automatically (to 2000 pixels on the longest side) before upload. Each image must be 5 MB or smaller after that; GIFs are never shrunk.
 
 ## Notes for the build
 - Questions with the same stem but different options are separate questions on purpose.

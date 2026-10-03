@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useAuth } from '../../auth/AuthContext.tsx'
 import LoadProblem from '../../components/LoadProblem.tsx'
+import QuestionImages from '../../components/QuestionImages.tsx'
 import { formatDate, formatPhone } from '../../lib/admin.ts'
 import { supabase } from '../../lib/supabase.ts'
 
@@ -16,6 +17,7 @@ type Report = {
     stem: string
     options: { key: string; text: string }[]
     answer: string
+    images: string[]
   } | null
   student: { full_name: string; phone: string } | null
 }
@@ -36,7 +38,7 @@ export default function Reports() {
       .from('question_reports')
       .select(
         'id, reason, comment, created_at, resolved_at, ' +
-          'question:questions(id, course_id, stem, options, answer), ' +
+          'question:questions(id, course_id, stem, options, answer, images), ' +
           'student:profiles!question_reports_student_id_fkey(full_name, phone)',
       )
       .order('created_at', { ascending: false })
@@ -123,6 +125,7 @@ export default function Reports() {
             {report.question && (
               <details className="report-question">
                 <summary>Show question</summary>
+                <QuestionImages courseId={report.question.course_id} images={report.question.images} />
                 <p>{report.question.stem}</p>
                 <ul className="option-preview">
                   {report.question.options.map((o) => (

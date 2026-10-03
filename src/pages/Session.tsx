@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import ContactLink from '../components/ContactLink.tsx'
 import LoadProblem from '../components/LoadProblem.tsx'
+import QuestionImages from '../components/QuestionImages.tsx'
 import ReportForm from '../components/ReportForm.tsx'
 import {
   finishSession,
@@ -315,6 +316,7 @@ function Runner({ data }: { data: LoadedSession }) {
       ) : (
         <article className="question">
           {question.times_seen >= 2 && <span className="badge seen-badge">Seen in {question.times_seen} papers</span>}
+          <QuestionImages key={question.id} courseId={session.course_id} images={question.images} />
           <p className="stem">{question.stem}</p>
 
           <div className="options" role="list">
